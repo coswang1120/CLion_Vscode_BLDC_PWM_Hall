@@ -73,7 +73,7 @@
 #include "PI_Cale.h"
 #include "Task_function.h"
 //#include "Usart_RS232.h"
-// #include "CAN.h"
+
 #include <stdio.h>
 #include <math.h>
 #include "main.h"
@@ -93,18 +93,32 @@ logic        logicContr=logic_DEFAULTS;
 ADCSamp      ADCSampPare=ADCSamp_DEFAULTS;
 Hall         Hall_Three=Hall_DEFAULTS ;
 
-
-
 extern u16 Tag;
 u16 USART_RX_STA;
 u16 spdcmd;
 extern  uint16_t  DUTY;
 u8 Res;
 
+char uart_rx_buffer[UART_RX_BUFFER_SIZE]; // 串口接收緩衝區
+volatile uint16_t uart_rx_write_ptr = 0; // 寫指針
+volatile uint8_t uart_rx_line_complete = 0; // 行結束標誌
 
-
-
-int main(void) {
+// 函數定義
+void process_uart_command(void) {
+    if (uart_rx_line_complete) {
+        // 移除結尾的 \r\n
+        uart_rx_buffer[uart_rx_write_ptr-2] = '\0';
+        
+        // 在這裡處理接收到的命令
+        printf("Received command: %s\r\n", uart_rx_buffer);
+        
+        // 重置緩衝區
+        uart_rx_write_ptr = 0;
+        uart_rx_line_complete = 0;
+    }
+}
+int main(void)
+{
     // 2ms  control  knob control
     Delay(10000);
     //SysTickConfig();              // 10ms
@@ -114,13 +128,13 @@ int main(void) {
     logicContr.Run_mode = 2;      //     1 ->  CCW     2 -> CW
     GPIO_LED485RE_int();          // Blink LED initial
     Init_Gpio_ADC();              // ADC的引脚初始化      83us
-    InitUSART3_Gpio();            // 串口3IO初始化
+    //InitUSART3_Gpio();            // 串口3IO初始化
     Init_Gpio_TIM1_PWM();         // 高级定时器1的6个IO初始化   // pwm
                                   // 12K       83.333us
     InitThreeHallGpio();          // 霍尔的IO初始化
     Init_PWMDAC_Gpio();           // PWM4的IO作为DAC初始化
     ThreeHallPara_init();         // 三霍尔角度传感器的参数初始化
-    Usart3_RS232_init();          // 串口3初始化
+    //Usart3_RS232_init();          // 串口3初始化
     DMA_Configuration();          // ADC连接DMA读取数据初始化
     Delay(10000);
     ADC1_Configuration();  // ADC模式初始化      1us
@@ -137,45 +151,20 @@ int main(void) {
     PI_Pare_init();  // 三个双PID参数初始化
 
 
-    Uart1Init(115200); // 初始化Uart1
+    //Uart3Init(115200); // 初始化Uart1
     PrintfInit(USART3); // printf 重定向到Uart
     
     // 發送歡迎訊息
-    
 
     while (1) {
         // //hello_world();
-         RunSystimer();        // 时间任务标志初始化  call 10ms
-        // // Uart3_RS232TX_sen();  // 串口3通讯的定时发送		  // send print                              // command
-        // // ReceiveData_chuli();  // 串口中断接收数据处理
-         CLEAR_flag();         // 清除时间任务标志   clear flag
-                              // printf("%d \r\n",Hall_Three.Speed_RPMF);
-         printf("Hello3\r\n");
-        //u3_printf("Hello\r\n");		//  output HC06   
+        // printf("Hello3\r\n");
+        RunSystimer();           // 时间任务标志初始化  call 10ms
+        process_uart_command();  // 處理串口命令
 
-        // if(huart3.isReceiving) {
-        //     // 回傳收到的訊息
-        //     UART3_SendString("Received: ");
-        //     for(u16 i = 0; i < huart3.rxCount; i++) {
-        //         UART3_SendByte(huart3.rxBuffer[i]);
-        //     }
-            
-        //     // 清空緩衝區
-        //     huart3.rxCount = 0;
-        //     huart3.isReceiving = 0;
-        // }
-        
-        // // 每秒發送一次測試訊息
-        // static uint32_t lastTime = 0;
-        // if(TaskTimePare.SysTimer - lastTime >= 1000) {
-        //     lastTime = TaskTimePare.SysTimer;
-        //     UART3_SendString("Test Message\r\n");
-        // }
-
-        //UART3_SendString("HC-06 Bluetooth Test\r\n");
-       
-
-}
+        CLEAR_flag();  // 清除时间任务标志   clear flag
+                       // printf("%d \r\n",Hall_Three.Speed_RPMF);
+    }
 }
 
 //===========================================================================

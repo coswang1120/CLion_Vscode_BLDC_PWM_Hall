@@ -1,12 +1,21 @@
 #include "printf_uart.h"
+#include "main.h"
 
 #if !defined(OS_USE_SEMIHOSTING)
 
+USART_TypeDef *G_uart;
 #define STDIN_FILE_NO 0
 #define STDOUT_FILE_NO 1
 #define STDERR_FILE_NO 2
 
-USART_TypeDef *G_uart;
+// 實作 fputc
+int fputc(int ch, FILE *f) {
+    USART_SendData(USART3, (uint8_t)ch);
+    while(USART_GetFlagStatus(USART3, USART_FLAG_TC) == RESET) {
+    }
+    return ch;
+}
+
 
 
 void PrintfInit(USART_TypeDef *uarTx) {
@@ -16,7 +25,7 @@ void PrintfInit(USART_TypeDef *uarTx) {
     setvbuf(stdout, NULL, _IONBF, 0);
 }
 
-void Uart1Init(u32 bound) {
+void Uart3Init(u32 bound) {
     //GPIO端口设置
     GPIO_InitTypeDef GPIO_InitStructure;
     USART_InitTypeDef USART_InitStructure;
@@ -44,7 +53,7 @@ void Uart1Init(u32 bound) {
     NVIC_Init(&NVIC_InitStructure);    //根据指定的参数初始化VIC寄存器
 
     //USART 初始化设置
-    USART_InitStructure.USART_BaudRate = bound;//串口波特率
+    USART_InitStructure.USART_BaudRate = 115200;//串口波特率
     USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为8位数据格式
     USART_InitStructure.USART_StopBits = USART_StopBits_1;//一个停止位
     USART_InitStructure.USART_Parity = USART_Parity_No;//无奇偶校验位
@@ -106,3 +115,25 @@ int _read(int fd, char *ptr, int len) {
 }
 
 #endif //#if !defined(OS_USE_SEMIHOSTING)
+
+
+void USART3_IRQHandler(void) {
+    if (USART_GetITStatus(USART3, USART_IT_RXNE) != RESET) {
+        char rx_data = USART_ReceiveData(USART3);
+        
+        // 檢查緩衝區是否還有空間
+        if (uart_rx_write_ptr < UART_RX_BUFFER_SIZE - 1) {
+            uart_rx_buffer[uart_rx_write_ptr++] = rx_data;
+            
+            // 檢查是否收到換行符
+            if (rx_data == '\n' && uart_rx_write_ptr >= 2) {
+                if (uart_rx_buffer[uart_rx_write_ptr-2] == '\r') {
+                    uart_rx_line_complete = 1;
+                }
+            }
+        } else {
+            // 緩衝區滿，重置
+            uart_rx_write_ptr = 0;
+        }
+    }
+}

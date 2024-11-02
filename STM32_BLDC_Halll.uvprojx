@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>STM32_BLDC_Hall_V17_3</TargetName>
+      <TargetName>STM32_BLDC_Hall</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pArmCC>5060750::V5.06 update 6 (build 750)::ARMCC</pArmCC>
@@ -178,7 +178,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>Segger\JL2CM3.dll</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -370,7 +370,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER, STM32F10X_MD</Define>
               <Undefine></Undefine>
-              <IncludePath>.\CMSIS;.\FWlib\inc;.\FWlib\src;.\User_include;.\User_program</IncludePath>
+              <IncludePath>.\CMSIS;..\Project;.\FWlib\inc;.\FWlib\src;.\User_include;.\User_program</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -548,11 +548,6 @@
               <FileType>1</FileType>
               <FilePath>.\FWlib\src\stm32f10x_wwdg.c</FilePath>
             </File>
-            <File>
-              <FileName>stm32f10x_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\FWlib\src\stm32f10x_it.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -562,6 +557,11 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\stm32f10x_it.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -579,11 +579,6 @@
               <FilePath>.\User_program\GPIO_int.c</FilePath>
             </File>
             <File>
-              <FileName>hello_world.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User_program\hello_world.c</FilePath>
-            </File>
-            <File>
               <FileName>IQ_math.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\User_program\IQ_math.c</FilePath>
@@ -592,11 +587,6 @@
               <FileName>PI_Cale.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\User_program\PI_Cale.c</FilePath>
-            </File>
-            <File>
-              <FileName>printf_uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User_program\printf_uart.c</FilePath>
             </File>
             <File>
               <FileName>Task_function.c</FileName>
@@ -627,6 +617,21 @@
               <FileName>Timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\User_program\Timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>Usart_RS232.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\User_program\Usart_RS232.c</FilePath>
+            </File>
+            <File>
+              <FileName>hello_world.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\User_program\hello_world.c</FilePath>
+            </File>
+            <File>
+              <FileName>printf_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\User_program\printf_uart.c</FilePath>
             </File>
           </Files>
         </Group>
