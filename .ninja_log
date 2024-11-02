@@ -40,3 +40,5 @@
 1188	1932	7522475345200618	CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj	6d024abb80cd92d0
 133	682	7522475334655359	CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj	2d4723329d9e566b
 7	123	7522483407250907	CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj	7f715b514035af5
+101	548	7522557345085953	CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj	aa545a4dee7af71c
+550	1551	7522557349566038	STM32_BLDC_Hall.elf	fba5618379df2157
