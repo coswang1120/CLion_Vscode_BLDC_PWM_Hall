@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "windows-cygwin-gcc-x64",
+            "name": "arm-none-eabi-gcc",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
@@ -81,9 +81,9 @@
                 "__yield()=",
                 "__vfp_status(x,y)=0"
             ],
-            "intelliSenseMode": "linux-gcc-x64",
-            "cStandard": "${default}",
-            "cppStandard": "${default}",
+            "intelliSenseMode": "gcc-arm",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
             "compilerPath": "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\13.3 rel1\\bin\\arm-none-eabi-gcc.exe"
         }
     ],
