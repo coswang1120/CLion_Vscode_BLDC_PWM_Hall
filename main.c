@@ -72,13 +72,14 @@
 #include "Tim4_Encoder_PWMDAC.h"
 #include "PI_Cale.h"
 #include "Task_function.h"
-#include "Usart_RS232.h"
+//#include "Usart_RS232.h"
 // #include "CAN.h"
 #include <stdio.h>
 #include <math.h>
 #include "main.h"
 #include "hello_world.h"
-
+#include <stm32f10x_usart.h>
+#include "printf_uart.h"
 
 u16 t;
 u16 len;
@@ -101,13 +102,16 @@ extern  uint16_t  DUTY;
 u8 Res;
 
 
+
+
 int main(void) {
     // 2ms  control  knob control
     Delay(10000);
-    SysTickConfig();              // 10ms
-    logicContr.Control_Mode = 1;  //   1 -> DUTY = 2*pi_spd.Ref    2 ->   close
+    //SysTickConfig();              // 10ms
+    Timer2Config();              // 10ms
+    logicContr.Control_Mode = 2;  //   1 -> DUTY = 2*pi_spd.Ref    2 ->   close
                                   //   loop    I & rotational speed
-    logicContr.Run_mode = 1;      //     1 ->  CCW     2 -> CW
+    logicContr.Run_mode = 2;      //     1 ->  CCW     2 -> CW
     GPIO_LED485RE_int();          // Blink LED initial
     Init_Gpio_ADC();              // ADC的引脚初始化      83us
     InitUSART3_Gpio();            // 串口3IO初始化
@@ -133,19 +137,20 @@ int main(void) {
     PI_Pare_init();  // 三个双PID参数初始化
 
 
-  
+    Uart1Init(115200); // 初始化Uart1
+    PrintfInit(USART3); // printf 重定向到Uart
     
     // 發送歡迎訊息
     
 
     while (1) {
-        hello_world();
-        RunSystimer();        // 时间任务标志初始化  call 10ms       
-        // Uart3_RS232TX_sen();  // 串口3通讯的定时发送		  // send print                              // command
-        // ReceiveData_chuli();  // 串口中断接收数据处理      
-        CLEAR_flag();         // 清除时间任务标志   clear flag
+        // //hello_world();
+         RunSystimer();        // 时间任务标志初始化  call 10ms
+        // // Uart3_RS232TX_sen();  // 串口3通讯的定时发送		  // send print                              // command
+        // // ReceiveData_chuli();  // 串口中断接收数据处理
+         CLEAR_flag();         // 清除时间任务标志   clear flag
                               // printf("%d \r\n",Hall_Three.Speed_RPMF);
-        //printf("Hello3\r\n");
+         printf("Hello3\r\n");
         //u3_printf("Hello\r\n");		//  output HC06   
 
         // if(huart3.isReceiving) {

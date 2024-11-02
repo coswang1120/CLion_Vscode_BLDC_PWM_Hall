@@ -628,6 +628,11 @@
               <FileType>1</FileType>
               <FilePath>.\User_program\hello_world.c</FilePath>
             </File>
+            <File>
+              <FileName>printf_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\User_program\printf_uart.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

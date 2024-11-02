@@ -45,6 +45,9 @@ void SysTickConfig(void);  // 滴答定时婆渲明
 void RunSystimer(void);    // 运行计数事件标志
 void CLEAR_flag(void);     // 清除事件标志位
 
+void Timer2Config(void);  // 新增 Timer2 配置函數宣告
+void Timer2_IRQHandler(void);  // Timer2 中斷處理函數宣告
+
 #endif
 
 

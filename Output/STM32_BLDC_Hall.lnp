@@ -39,6 +39,7 @@
 ".\output\timer.o"
 ".\output\usart_rs232.o"
 ".\output\hello_world.o"
+".\output\printf_uart.o"
 --library_type=microlib --strict --scatter ".\Output\STM32_BLDC_Hall.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

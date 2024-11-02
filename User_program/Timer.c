@@ -136,6 +136,45 @@ void CLEAR_flag(void)  // 清除事件标志位
     }
 }
 
+void Timer2Config(void) {
+    TIM_TimeBaseInitTypeDef TIM_TimeBaseStructure;
+    NVIC_InitTypeDef NVIC_InitStructure;
+
+    // 啟用 Timer2 時鐘
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+
+    // Timer2 基礎配置
+    // 72MHz / 7200 = 10KHz, 10KHz / 100 = 100Hz (10ms)
+    TIM_TimeBaseStructure.TIM_Period = 99;  // 100-1
+    TIM_TimeBaseStructure.TIM_Prescaler = 7199;  // 7200-1
+    TIM_TimeBaseStructure.TIM_ClockDivision = TIM_CKD_DIV1;
+    TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
+    TIM_TimeBaseInit(TIM2, &TIM_TimeBaseStructure);
+
+    // 配置 Timer2 中斷
+    NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_Init(&NVIC_InitStructure);
+
+    // 啟用 Timer2 中斷
+    TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
+    
+    // 啟動 Timer2
+    TIM_Cmd(TIM2, ENABLE);
+}
+
+// Timer2 中斷處理函數
+void TIM2_IRQHandler(void) {
+    if (TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET) {
+        TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
+        
+        // 設置 10ms 標誌位，與原 SysTick 相同的功能
+        TaskTimePare.IntClock_10ms = 1;
+    }
+}
+
 //===========================================================================
 // No more.
 //===========================================================================
