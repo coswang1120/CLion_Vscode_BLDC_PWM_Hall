@@ -103,6 +103,7 @@ char uart_rx_buffer[UART_RX_BUFFER_SIZE]; // 串口接收緩衝區
 volatile uint16_t uart_rx_write_ptr = 0; // 寫指針
 volatile uint8_t uart_rx_line_complete = 0; // 行結束標誌
 
+
 // 函數定義
 void process_uart_command(void) {
     if (uart_rx_line_complete) {
@@ -117,6 +118,7 @@ void process_uart_command(void) {
         uart_rx_line_complete = 0;
     }
 }
+
 int main(void)
 {
     // 2ms  control  knob control
@@ -153,14 +155,14 @@ int main(void)
 
 
 
-    //Uart3Init(115200); // 初始化Uart1
+    Uart3Init(115200); // 初始化Uart1
     PrintfInit(USART3); // printf 重定向到Uart
     
     // 發送歡迎訊息
 
     while (1) {
         // //hello_world();
-        // printf("Hello3\r\n");
+        //printf("Hello3\r\n");
         RunSystimer();           // 时间任务标志初始化  call 10ms
         process_uart_command();  // 處理串口命令
 

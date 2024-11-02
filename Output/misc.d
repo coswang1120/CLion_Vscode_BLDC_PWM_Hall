@@ -3,7 +3,7 @@
 .\output\misc.o: .\FWlib\inc\stm32f10x.h
 .\output\misc.o: .\CMSIS\core_cm3.h
 .\output\misc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\output\misc.o: .\FWlib\inc\system_stm32f10x.h
+.\output\misc.o: .\CMSIS\system_stm32f10x.h
 .\output\misc.o: .\FWlib\inc\stm32f10x_conf.h
 .\output\misc.o: .\FWlib\inc\stm32f10x_adc.h
 .\output\misc.o: .\FWlib\inc\stm32f10x.h

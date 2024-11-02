@@ -9,8 +9,6 @@ extern volatile uint8_t uart_rx_line_complete;
 
 int fputc( int ch , FILE *f);
 
-
-
 void process_uart_command(void);
 
 
