@@ -14,7 +14,7 @@ set(SIZE arm-none-eabi-size)
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
 # project settings
-project(CLionSTM32Demo C CXX ASM)
+project(STM32_BLDC C CXX ASM)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD 11)
 
@@ -28,6 +28,7 @@ set(CMAKE_C_STANDARD 11)
 
 add_compile_options(-mcpu=cortex-m3 -mthumb -mthumb-interwork)
 add_compile_options(-ffunction-sections -fdata-sections -fno-common -fmessage-length=0)
+
 
 # uncomment to mitigate c++17 absolute addresses warnings
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-register")
@@ -46,10 +47,16 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-add_definitions(-DUSE_HAL_DRIVER -DSTM32F103xB -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD)
+add_definitions(-DUSE_HAL_DRIVER -DSTM32F103xB -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD)
 
-include_directories(./STM32F10x_FWLib/inc ./include)
-file(GLOB_RECURSE SOURCES "startup/*.*" STM32F10x_FWLib/src/*.c "./source/*.c")
+include_directories(./FWLib/inc ./User_include ./CMSIS ./CMSIS/startup_stm32f10x_md.s)
+file(GLOB_RECURSE SOURCES "startup/*.*" FWLib/src/*.c "./User_program/*.c" "main.c")
+
+
+
+set(CMSIS_FILES ./CMSIS/core_cm3.c)
+
+add_library(FWlib ./CMSIS/system_stm32f10x.c CMSIS ${CMSIS_SRC})
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103C8Tx_FLASH.ld)
 
@@ -57,9 +64,13 @@ add_link_options(-Wl,-gc-sections,--print-memory-usage,-Map=${PROJECT_BINARY_DIR
 add_link_options(-mcpu=cortex-m3 -mthumb -mthumb-interwork)
 add_link_options(-T ${LINKER_SCRIPT})
 
+
+
+
+
 add_link_options(-specs=nano.specs -specs=nosys.specs -u _printf_float)
 
-add_executable(${PROJECT_NAME}.elf ${SOURCES} ${LINKER_SCRIPT})
+add_executable(${PROJECT_NAME}.elf ${SOURCES} ${LINKER_SCRIPT} ${CMSIS_FILES})
 
 set(HEX_FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.hex)
 set(BIN_FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.bin)
