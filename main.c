@@ -79,6 +79,7 @@
 #include "main.h"
 #include "hello_world.h"
 
+
 u16 t;
 u16 len;
 long numdec=0;
@@ -138,7 +139,7 @@ int main(void) {
     
 
     while (1) {
-        //hello_world();
+        hello_world();
         RunSystimer();        // 时间任务标志初始化  call 10ms       
         // Uart3_RS232TX_sen();  // 串口3通讯的定时发送		  // send print                              // command
         // ReceiveData_chuli();  // 串口中断接收数据处理      

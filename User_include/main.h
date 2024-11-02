@@ -1,7 +1,9 @@
 #ifndef __MAIN_H
 #define __MAIN_H
 #include "stm32f10x.h"
-#include <stdio.h>  
+#include <stdio.h>
+
+
 int fputc( int ch , FILE *f);
 
 int fputc( int ch , FILE *f)  // print function for RS232

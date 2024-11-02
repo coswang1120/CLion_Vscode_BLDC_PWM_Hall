@@ -101,7 +101,7 @@
 				},
 				{
 					"backtrace" : 4,
-					"fragment" : "-Og"
+					"fragment" : "-O0"
 				},
 				{
 					"backtrace" : 4,

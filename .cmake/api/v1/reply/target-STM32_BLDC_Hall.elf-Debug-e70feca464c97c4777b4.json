@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "STM32_BLDC.elf"
+			"path" : "STM32_BLDC_Hall.elf"
 		}
 	],
 	"backtrace" : 1,
@@ -125,7 +125,7 @@
 				},
 				{
 					"backtrace" : 8,
-					"fragment" : "-Og"
+					"fragment" : "-O0"
 				},
 				{
 					"backtrace" : 8,
@@ -258,7 +258,7 @@
 				},
 				{
 					"backtrace" : 8,
-					"fragment" : "-Og"
+					"fragment" : "-O0"
 				},
 				{
 					"backtrace" : 8,
@@ -310,7 +310,7 @@
 			]
 		}
 	],
-	"id" : "STM32_BLDC.elf::@6890427a1f51a3e7e1df",
+	"id" : "STM32_BLDC_Hall.elf::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -325,7 +325,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=D:/prog/STM32/STM32/stm32/STM32prog/CLion_Vscode_BLDC_PWM_Hall_2/STM32_BLDC.map",
+				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=D:/prog/STM32/STM32/stm32/STM32prog/CLion_Vscode_BLDC_PWM_Hall_2/STM32_BLDC_Hall.map",
 				"role" : "flags"
 			},
 			{
@@ -376,8 +376,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "STM32_BLDC.elf",
-	"nameOnDisk" : "STM32_BLDC.elf",
+	"name" : "STM32_BLDC_Hall.elf",
+	"nameOnDisk" : "STM32_BLDC_Hall.elf",
 	"paths" : 
 	{
 		"build" : ".",

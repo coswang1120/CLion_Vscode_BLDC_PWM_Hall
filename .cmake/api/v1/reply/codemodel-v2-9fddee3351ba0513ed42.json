@@ -28,7 +28,7 @@
 					[
 						0
 					],
-					"name" : "STM32_BLDC",
+					"name" : "STM32_BLDC_Hall",
 					"targetIndexes" : 
 					[
 						0,
@@ -41,15 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "FWlib::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-FWlib-Debug-c15536c5d977b88b493d.json",
+					"jsonFile" : "target-FWlib-Debug-a84fe1ab6c8ba7b94d84.json",
 					"name" : "FWlib",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "STM32_BLDC.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-STM32_BLDC.elf-Debug-a8369c9b99b21a6d523d.json",
-					"name" : "STM32_BLDC.elf",
+					"id" : "STM32_BLDC_Hall.elf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-STM32_BLDC_Hall.elf-Debug-e70feca464c97c4777b4.json",
+					"name" : "STM32_BLDC_Hall.elf",
 					"projectIndex" : 0
 				}
 			]
