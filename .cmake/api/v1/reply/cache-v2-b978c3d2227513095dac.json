@@ -223,7 +223,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "30"
+			"value" : "29"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -235,7 +235,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "5"
+			"value" : "6"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -259,7 +259,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Program Files/CMake/bin/cmake.exe"
+			"value" : "C:/Users/user090201/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -271,7 +271,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Program Files/CMake/bin/cpack.exe"
+			"value" : "C:/Users/user090201/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -283,7 +283,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Program Files/CMake/bin/ctest.exe"
+			"value" : "C:/Users/user090201/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -1003,7 +1003,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Program Files/CMake/share/cmake-3.30"
+			"value" : "C:/Users/user090201/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",

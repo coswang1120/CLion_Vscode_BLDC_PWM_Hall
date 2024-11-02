@@ -1,7 +1,7 @@
 Dependencies for Project 'STM32_BLDC_Halll_V17_3', Target 'STM32_BLDC_Hall_V17_3': (DO NOT MODIFY !)
 F (.\CMSIS\core_cm3.c)(0x6148641C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\CMSIS -I.\FWlib\inc -I.\FWlib\src -I.\User_include -I.\User_program-I d:\prog\STM32\STM32\stm32\STM32prog\CLion_Vscode_BLDC_PWM_Hall_2\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\core_cm3.o --omf_browse .\output\core_cm3.crf --depend .\output\core_cm3.d)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-F (.\CMSIS\system_stm32f10x.c)(0x5882115E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\CMSIS -I.\FWlib\inc -I.\FWlib\src -I.\User_include -I.\User_program-I d:\prog\STM32\STM32\stm32\STM32prog\CLion_Vscode_BLDC_PWM_Hall_2\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\system_stm32f10x.o --omf_browse .\output\system_stm32f10x.crf --depend .\output\system_stm32f10x.d)
+F (.\CMSIS\system_stm32f10x.c)(0x6725FFC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\CMSIS -I.\FWlib\inc -I.\FWlib\src -I.\User_include -I.\User_program-I d:\prog\STM32\STM32\stm32\STM32prog\CLion_Vscode_BLDC_PWM_Hall_2\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\system_stm32f10x.o --omf_browse .\output\system_stm32f10x.crf --depend .\output\system_stm32f10x.d)
 I (CMSIS\stm32f10x.h)(0x5882115E)
 I (CMSIS\core_cm3.h)(0x6148641C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -699,8 +699,8 @@ I (.\FWlib\inc\stm32f10x_spi.h)(0x6148641C)
 I (.\FWlib\inc\stm32f10x_tim.h)(0x6148641C)
 I (.\FWlib\inc\stm32f10x_usart.h)(0x6148641C)
 I (.\FWlib\inc\misc.h)(0x6148641C)
-F (.\FWlib\src\stm32f10x_it.c)(0x5FF287FF)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\CMSIS -I.\FWlib\inc -I.\FWlib\src -I.\User_include -I.\User_program-I d:\prog\STM32\STM32\stm32\STM32prog\CLion_Vscode_BLDC_PWM_Hall_2\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\stm32f10x_it.o --omf_browse .\output\stm32f10x_it.crf --depend .\output\stm32f10x_it.d)
-I (.\FWlib\inc\stm32f10x_it.h)(0x588211AC)
+F (.\FWlib\src\stm32f10x_it.c)(0x6725F9A9)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\CMSIS -I.\FWlib\inc -I.\FWlib\src -I.\User_include -I.\User_program-I d:\prog\STM32\STM32\stm32\STM32prog\CLion_Vscode_BLDC_PWM_Hall_2\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\stm32f10x_it.o --omf_browse .\output\stm32f10x_it.crf --depend .\output\stm32f10x_it.d)
+I (.\FWlib\inc\stm32f10x_it.h)(0x6725F9A9)
 I (.\FWlib\inc\stm32f10x.h)(0x6148641C)
 I (.\CMSIS\core_cm3.h)(0x6148641C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -778,7 +778,7 @@ I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
 I (.\User_include\main.h)(0x6725F67C)
 I (.\User_include\hello_world.h)(0x6725E755)
-I (.\User_include\printf_uart.h)(0x6725E568)
+I (.\User_include\printf_uart.h)(0x6725F911)
 F (.\User_program\ADC_int.c)(0x67238356)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\CMSIS -I.\FWlib\inc -I.\FWlib\src -I.\User_include -I.\User_program-I d:\prog\STM32\STM32\stm32\STM32prog\CLion_Vscode_BLDC_PWM_Hall_2\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\adc_int.o --omf_browse .\output\adc_int.crf --depend .\output\adc_int.d)
 I (.\User_include\ADC_int.h)(0x67237D1A)
 I (.\CMSIS\stm32f10x.h)(0x5882115E)
@@ -911,7 +911,7 @@ I (.\FWlib\inc\stm32f10x_usart.h)(0x6148641C)
 I (.\FWlib\inc\stm32f10x_wwdg.h)(0x6148641C)
 I (.\FWlib\inc\misc.h)(0x6148641C)
 F (.\User_program\printf_uart.c)(0x6725F5DA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\CMSIS -I.\FWlib\inc -I.\FWlib\src -I.\User_include -I.\User_program-I d:\prog\STM32\STM32\stm32\STM32prog\CLion_Vscode_BLDC_PWM_Hall_2\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\printf_uart.o --omf_browse .\output\printf_uart.crf --depend .\output\printf_uart.d)
-I (.\User_include\printf_uart.h)(0x6725E568)
+I (.\User_include\printf_uart.h)(0x6725F911)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (.\CMSIS\stm32f10x.h)(0x5882115E)
 I (.\CMSIS\core_cm3.h)(0x6148641C)
@@ -1053,7 +1053,7 @@ I (.\User_include\ThreeHall.h)(0x672344EB)
 I (.\User_include\Task_function.h)(0x67237D28)
 I (.\User_include\PI_Cale.h)(0x672344EB)
 I (.\User_include\Timer.h)(0x6725B86A)
-I (.\User_include\printf_uart.h)(0x6725E568)
+I (.\User_include\printf_uart.h)(0x6725F911)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (.\User_include\Tim4_Encoder_PWMDAC.h)(0x672344EB)
 F (.\User_program\Tim1_PWM.c)(0x6725B0E8)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\CMSIS -I.\FWlib\inc -I.\FWlib\src -I.\User_include -I.\User_program-I d:\prog\STM32\STM32\stm32\STM32prog\CLion_Vscode_BLDC_PWM_Hall_2\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\tim1_pwm.o --omf_browse .\output\tim1_pwm.crf --depend .\output\tim1_pwm.d)
@@ -1159,6 +1159,6 @@ I (.\User_include\ThreeHall.h)(0x672344EB)
 I (.\User_include\Tim4_Encoder_PWMDAC.h)(0x672344EB)
 I (.\User_include\PI_Cale.h)(0x672344EB)
 I (.\User_include\Task_function.h)(0x67237D28)
-I (.\User_include\printf_uart.h)(0x6725E568)
+I (.\User_include\printf_uart.h)(0x6725F911)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)

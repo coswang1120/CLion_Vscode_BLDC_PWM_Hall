@@ -30,7 +30,7 @@ typedef struct {
 
 #define  Test_DEFAULTS  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}  // 初始化参数
 
-void Uart1Init(u32 bound);
+void Uart3Init(u32 bound);
 void PrintfInit(USART_TypeDef *uarTx);
 int _isatty(int fd);
 int _write(int fd, char *ptr, int len);

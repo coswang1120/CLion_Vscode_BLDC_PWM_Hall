@@ -54,9 +54,9 @@ file(GLOB_RECURSE SOURCES "startup/*.*" FWLib/src/*.c "./User_program/*.c" "main
 
 
 
-set(CMSIS_FILES ./CMSIS/core_cm3.c)
+set(CMSIS_FILES ./CMSIS/core_cm3.c ./CMSIS/system_stm32f10x.c)
 
-add_library(FWlib ./CMSIS/system_stm32f10x.c CMSIS ${CMSIS_SRC})
+add_library(FWlib ./CMSIS/system_stm32f10x.c CMSIS ${CMSIS_FILES})
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103C8Tx_FLASH.ld)
 

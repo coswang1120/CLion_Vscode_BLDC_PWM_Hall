@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "FWlib::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-FWlib-Debug-a84fe1ab6c8ba7b94d84.json",
+					"jsonFile" : "target-FWlib-Debug-32028c48811eb0367f4a.json",
 					"name" : "FWlib",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "STM32_BLDC_Hall.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-STM32_BLDC_Hall.elf-Debug-e0bb9d86c8afdf7231f9.json",
+					"jsonFile" : "target-STM32_BLDC_Hall.elf-Debug-62be124efa1fa790d526.json",
 					"name" : "STM32_BLDC_Hall.elf",
 					"projectIndex" : 0
 				}

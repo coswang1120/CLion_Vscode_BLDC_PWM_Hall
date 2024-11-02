@@ -23,10 +23,10 @@ extern  TaskTime       TaskTimePare;
 
 
 
-void SysTick_Handler(void)
-{
-  TaskTimePare.IntClock_10ms=1;
-}
+// void SysTick_Handler(void)
+// {
+//   TaskTimePare.IntClock_10ms=1;
+// }
  void TIM1_BRK_IRQHandler(void)    // ½ô¼±Í£»úÖÐ¶Ï
 {
 	Stop_Motor( );
