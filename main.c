@@ -151,6 +151,8 @@ int main(void)
     PI_Pare_init();  // 三个双PID参数初始化
 
 
+
+
     //Uart3Init(115200); // 初始化Uart1
     PrintfInit(USART3); // printf 重定向到Uart
     
