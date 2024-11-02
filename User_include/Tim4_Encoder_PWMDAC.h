@@ -15,8 +15,8 @@
 #ifndef __TIM4_ENCODER_PWMDAC_H
 #define __TIM4_ENCODER_PWMDAC_H 
 
-#include "IQ_math.h"
-#include "stm32f10x.h"
+//#include "IQ_math.h"
+//#include "stm32f10x.h"
  
 void TIM4PWMDAC_Config(void); //定时器4的编码器部分初始化 
 #endif /* __TIM4_ENCODER_PWMDAC_H  */

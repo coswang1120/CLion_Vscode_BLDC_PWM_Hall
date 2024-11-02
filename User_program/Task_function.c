@@ -34,20 +34,20 @@ void knob_control(void)
 	 if (( ADCSampPare.RP_speed_Voltage<= 350)  ) // 电位器旋转一定位置开始给定速度输出控制电机
      {
 	// 启动电机控制需要初始化参数，三个PI环路参数	
-		 logicContr.drive_car=0;
+		logicContr.drive_car=0;
 			 
 			 
-		 logicContr.Start_order=0;
-		 logicContr.Qiehuan_count=0;
+		logicContr.Start_order=0;
+		logicContr.Qiehuan_count=0;
 
-		 pi_spd.Fbk=0;
-		 pi_spd.Ref=0;
-	   pi_spd.up=0;
-	   pi_spd.ui=0;
-	   pi_spd.v1=0;
-	   pi_spd.i1=0;
-	   pi_spd.Out=0;
-	   pi_spd.OutF=0;
+		pi_spd.Fbk=0;
+		pi_spd.Ref=0;
+		pi_spd.up=0;
+	    pi_spd.ui=0;
+	    pi_spd.v1=0;
+	    pi_spd.i1=0;
+	    pi_spd.Out=0;
+	    pi_spd.OutF=0;
  
 	}
 	else
@@ -60,7 +60,7 @@ void knob_control(void)
 
      if ((logicContr.olddrive_car==0) &&( logicContr.drive_car==1 ))
      {
-   	  logicContr.Start_order=1;
+		logicContr.Start_order=1;
      }
      else if ((logicContr.olddrive_car==1) &&( logicContr.drive_car==1 ))
 	   { 
@@ -70,7 +70,7 @@ void knob_control(void)
 		  Stop_Motor();
 		  logicContr.Start_order=0;
 	   }
-	  logicContr.olddrive_car=logicContr.drive_car;
+
 		 
 	 }
    else{    //  logicContr.Control_Mode==1
@@ -114,9 +114,10 @@ void knob_control(void)
 		  Stop_Motor();
 		  logicContr.Start_order=0;
 	   }
-	  logicContr.olddrive_car=logicContr.drive_car;
+
 				 
-				 }	
+				 }
+	logicContr.olddrive_car=logicContr.drive_car;
  
 }
 

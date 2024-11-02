@@ -18,7 +18,7 @@ extern  PI_Control   pi_spd ;
 extern  PI_Control   pi_ICurr ;
 
 
-void  PI_Controller(p_PI_Control  pV)
+void  PI_Controller(p_PI_Control  pV) // 只要 輸入  pV->Ref  pV->Fbk  pV->Out  pV->v1
 {
     /* proportional term */
 	pV->up = pV->Ref - pV->Fbk;
@@ -28,7 +28,7 @@ void  PI_Controller(p_PI_Control  pV)
 	pV->i1 = pV->ui;                                                        // history integral term 
 
 	/* control output */ // _IQmpy 是移位2…^15次方 所以Kp/32768
-	pV->v1 = _IQmpy(pV->Kp, (pV->up )) + pV->ui;	 
+	pV->v1 = _IQmpy(pV->Kp, (pV->up )) + pV->i1;
 	pV->Out=IQsat( pV->v1, pV->Umax,  pV->Umin); //限制输出
 }
 

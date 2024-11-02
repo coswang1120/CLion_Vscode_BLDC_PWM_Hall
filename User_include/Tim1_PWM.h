@@ -16,7 +16,7 @@
 #define _Tim1_PWM_H 
 
 #include "IQ_math.h"
-#include "stm32f10x.h"
+//#include "stm32f10x.h"
 
 #define CKTIM	((u32)72000000uL) 	/* Silicon running at 72MHz Resolution: 1Hz */
 #define PWM_PRSC ((u8)0)                          

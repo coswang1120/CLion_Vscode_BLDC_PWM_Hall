@@ -15,7 +15,7 @@
 #ifndef __THREEHALL_H
 #define __THREEHALL_H
 #include "stm32f10x.h"
-#include "IQ_math.h"
+//#include "IQ_math.h"
 
 typedef struct {
     uint8_t HallUVW[3];          // 读取三个霍尔的对应状态

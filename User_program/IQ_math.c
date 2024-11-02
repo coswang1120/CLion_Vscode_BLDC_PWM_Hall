@@ -11,6 +11,7 @@
 //网址: https://shuolidianzi.taobao.com
 //Author-QQ: 616264123
 //电机控制QQ群：314306105
+// sin cos  atan  平方根  絕對值
 //############################################################
 #include "IQ_math.h"
 

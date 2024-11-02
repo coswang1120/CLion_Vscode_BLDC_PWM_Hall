@@ -61,7 +61,6 @@
 // 2. 外部輸入命令, 改變轉速獲控制 (聲音/手機/C#/C++/python)
 // 3. 改控制器
 //
-//
 
 //############################################################
 
@@ -81,8 +80,8 @@
 #include <stdio.h>
 #include <math.h>
 #include "main.h"
-#include "hello_world.h"
-#include <stm32f10x_usart.h>
+//#include "hello_world.h"
+//#include <stm32f10x_usart.h>
 #include "printf_uart.h"
 
 u16 t;
@@ -129,9 +128,9 @@ int main(void)
     Delay(10000);
     //SysTickConfig();              // 10ms
     Timer2Config();              // 10ms
-    logicContr.Control_Mode = 2;  //   1 -> DUTY = 2*pi_spd.Ref    2 ->   close
+    logicContr.Control_Mode = 1;  //   1 -> DUTY = 2*pi_spd.Ref    2 ->   close
                                   //   loop    I & rotational speed
-    logicContr.Run_mode = 2;      //     1 ->  CCW     2 -> CW
+    logicContr.Run_mode = 1;      //     1 ->  CCW     2 -> CW
     GPIO_LED485RE_int();          // Blink LED initial
     Init_Gpio_ADC();              // ADC的引脚初始化      83us
     //InitUSART3_Gpio();            // 串口3IO初始化
@@ -168,7 +167,7 @@ int main(void)
         // //hello_world();
         //printf("Hello3\r\n");
         RunSystimer();           // 时间任务标志初始化  call 10ms
-        process_uart_command();  // 處理串口命令
+        //process_uart_command();  // 處理串口命令
 
         CLEAR_flag();  // 清除时间任务标志   clear flag
                        // printf("%d \r\n",Hall_Three.Speed_RPMF);
