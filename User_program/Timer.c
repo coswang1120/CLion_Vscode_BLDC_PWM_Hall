@@ -11,6 +11,7 @@
 //网址: https://shuolidianzi.taobao.com   
 //Author-QQ: 616264123
 //电机控制QQ群：314306105
+// printf 放在這邊 可以有時間觀念
 //############################################################
 #include "Timer.h"
 #include "GPIO_int.h"
@@ -29,8 +30,9 @@
 //extern  Hall           Hall_Three;
 
 //extern int16_t IQSin_Cos_Table[256];
-
+//#include "printf_uart.h"
 extern  TaskTime       TaskTimePare;
+extern PI_Control pi_spd;
 
 void SysTickConfig(void) {
     /* Setup SysTick Timer for 1ms interrupts  */
@@ -93,6 +95,8 @@ void RunSystimer(void)  //  every loop clear flag but not count
         {
             TaskTimePare.Tim10s_count = 0;
             TaskTimePare.Tim10s_flag = 1;
+            //printf("Hello\r\n");
+            //printf("%d \r\n",pi_spd.Ref);
         }
 
         if (++TaskTimePare.Tim1min_count >= 6000)  // 1min
@@ -130,6 +134,7 @@ void CLEAR_flag(void)  // 清除事件标志位
     }
     if (TaskTimePare.Tim10s_flag == 1) {
         TaskTimePare.Tim10s_flag = 0;
+
     }
     if (TaskTimePare.Tim1min_flag == 1) {
         TaskTimePare.Tim1min_flag = 0;

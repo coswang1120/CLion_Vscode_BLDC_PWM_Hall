@@ -42,6 +42,8 @@ C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-ea
                               C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crt0.o (__libc_init_array)
 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
                               C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o) (__retarget_lock_init_recursive)
+C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
+                              CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj (strcmp)
 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
                               C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o) (memchr)
 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
@@ -76,8 +78,6 @@ C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-ea
                               C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o) (_isatty_r)
 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
                               C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o) (_sbrk_r)
-C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
-                              C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-locale.o) (strcmp)
 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
                               C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-dtoa.o) (memcpy)
 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-assert.o)
@@ -184,6 +184,10 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
  .data          0x00000000        0x0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
  .bss           0x00000000        0x0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
+ .rodata.CURRENT_DIVISOR
+                0x00000000        0x4 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
+ .rodata.CURRENT_OFFSET
+                0x00000000        0x4 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
  .text          0x00000000        0x0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
  .data          0x00000000        0x0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
  .bss           0x00000000        0x0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
@@ -1322,10 +1326,6 @@ Discarded input sections
  .bss.USART_RX_STA
                 0x00000000        0x2 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
  .bss.spdcmd    0x00000000        0x2 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
- .bss.Res       0x00000000        0x1 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
- .rodata        0x00000000       0x17 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
- .text.process_uart_command
-                0x00000000       0x44 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
  .text          0x00000000       0x14 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
  .data          0x00000000        0x0 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
  .bss           0x00000000        0x0 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
@@ -1424,10 +1424,6 @@ Discarded input sections
  .bss           0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
  .text._printf_r
                 0x00000000       0x1c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
- .text.printf   0x00000000       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
- .debug_frame   0x00000000       0x6c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
- .ARM.attributes
-                0x00000000       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
  .text          0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
  .data          0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
  .bss           0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
@@ -1513,6 +1509,9 @@ Discarded input sections
                 0x00000000        0x1 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
  .bss.__lock___atexit_recursive_mutex
                 0x00000000        0x1 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+ .data          0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
+ .bss           0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
+ .ARM.extab     0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
  .text          0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
  .data          0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
  .bss           0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
@@ -1600,16 +1599,6 @@ Discarded input sections
  .text          0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
  .data          0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
  .bss           0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
- .text          0x00000000       0x14 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
- .data          0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
- .bss           0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
- .ARM.extab     0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
- .ARM.exidx     0x00000000        0x8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
- .debug_line_str
-                0x00000000       0xe6 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
- .debug_frame   0x00000000       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
- .ARM.attributes
-                0x00000000       0x1b C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
  .text          0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
  .data          0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
  .bss           0x00000000        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
@@ -1804,722 +1793,739 @@ LOAD C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-no
                 0x08000000                g_pfnVectors
                 0x0800010c                        . = ALIGN (0x4)
 
-.text           0x08000110     0x65b0
+.text           0x08000110     0x6728
                 0x08000110                        . = ALIGN (0x4)
  *(.text)
- .text          0x08000110       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
-                0x08000110                strlen
- .text          0x08000120      0x378 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
-                0x08000120                __aeabi_drsub
-                0x08000128                __aeabi_dsub
-                0x08000128                __subdf3
-                0x0800012c                __aeabi_dadd
-                0x0800012c                __adddf3
-                0x080003a4                __floatunsidf
-                0x080003a4                __aeabi_ui2d
-                0x080003c4                __floatsidf
-                0x080003c4                __aeabi_i2d
-                0x080003e8                __aeabi_f2d
-                0x080003e8                __extendsfdf2
-                0x0800042c                __floatundidf
-                0x0800042c                __aeabi_ul2d
-                0x0800043c                __floatdidf
-                0x0800043c                __aeabi_l2d
- .text          0x08000498      0x424 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
-                0x08000498                __aeabi_dmul
-                0x08000498                __muldf3
-                0x080006ec                __divdf3
-                0x080006ec                __aeabi_ddiv
- .text          0x080008bc      0x110 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
-                0x080008bc                __gtdf2
-                0x080008bc                __gedf2
-                0x080008c4                __ltdf2
-                0x080008c4                __ledf2
-                0x080008cc                __nedf2
-                0x080008cc                __eqdf2
-                0x080008cc                __cmpdf2
-                0x08000948                __aeabi_cdrcmple
-                0x08000958                __aeabi_cdcmpeq
-                0x08000958                __aeabi_cdcmple
-                0x08000968                __aeabi_dcmpeq
-                0x0800097c                __aeabi_dcmplt
-                0x08000990                __aeabi_dcmple
-                0x080009a4                __aeabi_dcmpge
-                0x080009b8                __aeabi_dcmpgt
- .text          0x080009cc       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
-                0x080009cc                __unorddf2
-                0x080009cc                __aeabi_dcmpun
- .text          0x080009f8       0x50 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
-                0x080009f8                __aeabi_d2iz
-                0x080009f8                __fixdfsi
+ .text          0x08000110       0x14 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
+                0x08000110                strcmp
+ .text          0x08000124       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
+                0x08000124                strlen
+ .text          0x08000134      0x378 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+                0x08000134                __aeabi_drsub
+                0x0800013c                __aeabi_dsub
+                0x0800013c                __subdf3
+                0x08000140                __aeabi_dadd
+                0x08000140                __adddf3
+                0x080003b8                __floatunsidf
+                0x080003b8                __aeabi_ui2d
+                0x080003d8                __floatsidf
+                0x080003d8                __aeabi_i2d
+                0x080003fc                __aeabi_f2d
+                0x080003fc                __extendsfdf2
+                0x08000440                __floatundidf
+                0x08000440                __aeabi_ul2d
+                0x08000450                __floatdidf
+                0x08000450                __aeabi_l2d
+ .text          0x080004ac      0x424 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+                0x080004ac                __aeabi_dmul
+                0x080004ac                __muldf3
+                0x08000700                __divdf3
+                0x08000700                __aeabi_ddiv
+ .text          0x080008d0      0x110 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
+                0x080008d0                __gtdf2
+                0x080008d0                __gedf2
+                0x080008d8                __ltdf2
+                0x080008d8                __ledf2
+                0x080008e0                __nedf2
+                0x080008e0                __eqdf2
+                0x080008e0                __cmpdf2
+                0x0800095c                __aeabi_cdrcmple
+                0x0800096c                __aeabi_cdcmpeq
+                0x0800096c                __aeabi_cdcmple
+                0x0800097c                __aeabi_dcmpeq
+                0x08000990                __aeabi_dcmplt
+                0x080009a4                __aeabi_dcmple
+                0x080009b8                __aeabi_dcmpge
+                0x080009cc                __aeabi_dcmpgt
+ .text          0x080009e0       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
+                0x080009e0                __unorddf2
+                0x080009e0                __aeabi_dcmpun
+ .text          0x08000a0c       0x50 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
+                0x08000a0c                __aeabi_d2iz
+                0x08000a0c                __fixdfsi
  *(.text*)
  .text.deregister_tm_clones
-                0x08000a48       0x1c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x08000a5c       0x1c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  .text.register_tm_clones
-                0x08000a64       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x08000a78       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  .text.__do_global_dtors_aux
-                0x08000a88       0x28 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x08000a9c       0x28 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  .text.frame_dummy
-                0x08000ab0       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x08000ac4       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  .text.ADC1_Configuration
-                0x08000ad4       0xd0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
-                0x08000ad4                ADC1_Configuration
+                0x08000ae8       0xd0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
+                0x08000ae8                ADC1_Configuration
  .text.DMA_Configuration
-                0x08000ba4       0x6c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
-                0x08000ba4                DMA_Configuration
+                0x08000bb8       0x6c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
+                0x08000bb8                DMA_Configuration
  .text.Offset_CurrentReading
-                0x08000c10       0xec CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
-                0x08000c10                Offset_CurrentReading
+                0x08000c24       0xec CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
+                0x08000c24                Offset_CurrentReading
  .text.ADC_Sample
-                0x08000cfc       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
-                0x08000cfc                ADC_Sample
+                0x08000d10       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
+                0x08000d10                ADC_Sample
  .text.Protection_software
-                0x08000d74       0x30 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
-                0x08000d74                Protection_software
- .text.Delay    0x08000da4       0x34 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
-                0x08000da4                Delay
+                0x08000d88       0x30 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
+                0x08000d88                Protection_software
+ .text.Delay    0x08000db8       0x34 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
+                0x08000db8                Delay
  .text.GPIO_LED485RE_int
-                0x08000dd8       0x30 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
-                0x08000dd8                GPIO_LED485RE_int
+                0x08000dec       0x30 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
+                0x08000dec                GPIO_LED485RE_int
  .text.InitThreeHallGpio
-                0x08000e08       0x2c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
-                0x08000e08                InitThreeHallGpio
+                0x08000e1c       0x2c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
+                0x08000e1c                InitThreeHallGpio
  .text.Init_Gpio_ADC
-                0x08000e34       0x3c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
-                0x08000e34                Init_Gpio_ADC
+                0x08000e48       0x3c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
+                0x08000e48                Init_Gpio_ADC
  .text.Init_PWMDAC_Gpio
-                0x08000e70       0x3c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
-                0x08000e70                Init_PWMDAC_Gpio
+                0x08000e84       0x3c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
+                0x08000e84                Init_PWMDAC_Gpio
  .text.Init_Gpio_TIM1_PWM
-                0x08000eac       0x68 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
-                0x08000eac                Init_Gpio_TIM1_PWM
+                0x08000ec0       0x68 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
+                0x08000ec0                Init_Gpio_TIM1_PWM
  .text.LED1_Toggle
-                0x08000f14       0x28 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
-                0x08000f14                LED1_Toggle
- .text.IQsat    0x08000f3c       0x38 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/IQ_math.c.obj
-                0x08000f3c                IQsat
+                0x08000f28       0x28 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
+                0x08000f28                LED1_Toggle
+ .text.IQsat    0x08000f50       0x38 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/IQ_math.c.obj
+                0x08000f50                IQsat
  .text.PI_Controller
-                0x08000f74       0x80 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/PI_Cale.c.obj
-                0x08000f74                PI_Controller
+                0x08000f88       0x80 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/PI_Cale.c.obj
+                0x08000f88                PI_Controller
  .text.PI_Pare_init
-                0x08000ff4       0x50 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/PI_Cale.c.obj
-                0x08000ff4                PI_Pare_init
+                0x08001008       0x50 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/PI_Cale.c.obj
+                0x08001008                PI_Pare_init
  .text.InitializeParameters
-                0x08001044       0x58 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Task_function.c.obj
-                0x08001044                InitializeParameters
+                0x08001058       0x58 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Task_function.c.obj
+                0x08001058                InitializeParameters
  .text.knob_control
-                0x0800109c       0x84 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Task_function.c.obj
-                0x0800109c                knob_control
+                0x080010b0       0xa0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Task_function.c.obj
+                0x080010b0                knob_control
  .text.ThreeHallPara_init
-                0x08001120       0x30 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
-                0x08001120                ThreeHallPara_init
+                0x08001150       0x30 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
+                0x08001150                ThreeHallPara_init
  .text.ThreeHall_huanxkz
-                0x08001150      0x344 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
-                0x08001150                ThreeHall_huanxkz
+                0x08001180      0x344 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
+                0x08001180                ThreeHall_huanxkz
+ .text.updateCurrentReference
+                0x080014c4       0x50 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
+                0x080014c4                updateCurrentReference
  .text.TIM1_UP_IRQHandler
-                0x08001494      0x180 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
-                0x08001494                TIM1_UP_IRQHandler
+                0x08001514      0x168 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
+                0x08001514                TIM1_UP_IRQHandler
  .text.Tim1_PWM_Init
-                0x08001614      0x144 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
-                0x08001614                Tim1_PWM_Init
+                0x0800167c      0x144 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+                0x0800167c                Tim1_PWM_Init
  .text.Stop_Motor
-                0x08001758       0x48 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
-                0x08001758                Stop_Motor
+                0x080017c0       0x48 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+                0x080017c0                Stop_Motor
  .text.MOS_Q41PWM
-                0x080017a0       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
-                0x080017a0                MOS_Q41PWM
+                0x08001808       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+                0x08001808                MOS_Q41PWM
  .text.MOS_Q16PWM
-                0x08001818       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
-                0x08001818                MOS_Q16PWM
+                0x08001880       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+                0x08001880                MOS_Q16PWM
  .text.MOS_Q63PWM
-                0x08001890       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
-                0x08001890                MOS_Q63PWM
+                0x080018f8       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+                0x080018f8                MOS_Q63PWM
  .text.MOS_Q32PWM
-                0x08001908       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
-                0x08001908                MOS_Q32PWM
+                0x08001970       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+                0x08001970                MOS_Q32PWM
  .text.MOS_Q25PWM
-                0x08001980       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
-                0x08001980                MOS_Q25PWM
+                0x080019e8       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+                0x080019e8                MOS_Q25PWM
  .text.MOS_Q54PWM
-                0x080019f8       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
-                0x080019f8                MOS_Q54PWM
+                0x08001a60       0x78 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+                0x08001a60                MOS_Q54PWM
  .text.TIM4PWMDAC_Config
-                0x08001a70       0xd0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
-                0x08001a70                TIM4PWMDAC_Config
+                0x08001ad8       0xd0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
+                0x08001ad8                TIM4PWMDAC_Config
  .text.RunSystimer
-                0x08001b40      0x12c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
-                0x08001b40                RunSystimer
+                0x08001ba8      0x12c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
+                0x08001ba8                RunSystimer
  .text.CLEAR_flag
-                0x08001c6c       0x90 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
-                0x08001c6c                CLEAR_flag
+                0x08001cd4       0x90 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
+                0x08001cd4                CLEAR_flag
  .text.Timer2Config
-                0x08001cfc       0x62 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
-                0x08001cfc                Timer2Config
- *fill*         0x08001d5e        0x2 
+                0x08001d64       0x62 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
+                0x08001d64                Timer2Config
+ *fill*         0x08001dc6        0x2 
  .text.TIM2_IRQHandler
-                0x08001d60       0x2c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
-                0x08001d60                TIM2_IRQHandler
+                0x08001dc8       0x2c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
+                0x08001dc8                TIM2_IRQHandler
  .text.PrintfInit
-                0x08001d8c       0x30 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
-                0x08001d8c                PrintfInit
+                0x08001df4       0x30 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+                0x08001df4                PrintfInit
  .text.Uart3Init
-                0x08001dbc       0xb0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
-                0x08001dbc                Uart3Init
- .text._isatty  0x08001e6c       0x24 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
-                0x08001e6c                _isatty
- .text._write   0x08001e90       0x7c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
-                0x08001e90                _write
- .text._close   0x08001f0c       0x26 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
-                0x08001f0c                _close
- .text._lseek   0x08001f32       0x1a CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
-                0x08001f32                _lseek
- .text._read    0x08001f4c       0x44 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
-                0x08001f4c                _read
+                0x08001e24       0xb0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+                0x08001e24                Uart3Init
+ .text._isatty  0x08001ed4       0x24 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+                0x08001ed4                _isatty
+ .text._write   0x08001ef8       0x7c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+                0x08001ef8                _write
+ .text._close   0x08001f74       0x26 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+                0x08001f74                _close
+ .text._lseek   0x08001f9a       0x1a CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+                0x08001f9a                _lseek
+ .text._read    0x08001fb4       0x44 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+                0x08001fb4                _read
  .text.USART3_IRQHandler
-                0x08001f90       0x88 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
-                0x08001f90                USART3_IRQHandler
+                0x08001ff8       0x88 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+                0x08001ff8                USART3_IRQHandler
  .text.NVIC_PriorityGroupConfig
-                0x08002018       0x24 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
-                0x08002018                NVIC_PriorityGroupConfig
+                0x08002080       0x24 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
+                0x08002080                NVIC_PriorityGroupConfig
  .text.NVIC_Init
-                0x0800203c       0xc4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
-                0x0800203c                NVIC_Init
+                0x080020a4       0xc4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
+                0x080020a4                NVIC_Init
  .text.ADC_DeInit
-                0x08002100       0x74 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
-                0x08002100                ADC_DeInit
+                0x08002168       0x74 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+                0x08002168                ADC_DeInit
  .text.ADC_Init
-                0x08002174       0xa4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
-                0x08002174                ADC_Init
+                0x080021dc       0xa4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+                0x080021dc                ADC_Init
  .text.ADC_StructInit
-                0x08002218       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
-                0x08002218                ADC_StructInit
- .text.ADC_Cmd  0x0800224e       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
-                0x0800224e                ADC_Cmd
+                0x08002280       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+                0x08002280                ADC_StructInit
+ .text.ADC_Cmd  0x080022b6       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+                0x080022b6                ADC_Cmd
  .text.ADC_DMACmd
-                0x08002284       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
-                0x08002284                ADC_DMACmd
+                0x080022ec       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+                0x080022ec                ADC_DMACmd
  .text.ADC_ResetCalibration
-                0x080022ba       0x1e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
-                0x080022ba                ADC_ResetCalibration
+                0x08002322       0x1e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+                0x08002322                ADC_ResetCalibration
  .text.ADC_GetResetCalibrationStatus
-                0x080022d8       0x2e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
-                0x080022d8                ADC_GetResetCalibrationStatus
+                0x08002340       0x2e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+                0x08002340                ADC_GetResetCalibrationStatus
  .text.ADC_StartCalibration
-                0x08002306       0x1e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
-                0x08002306                ADC_StartCalibration
+                0x0800236e       0x1e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+                0x0800236e                ADC_StartCalibration
  .text.ADC_GetCalibrationStatus
-                0x08002324       0x2e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
-                0x08002324                ADC_GetCalibrationStatus
+                0x0800238c       0x2e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+                0x0800238c                ADC_GetCalibrationStatus
  .text.ADC_SoftwareStartConvCmd
-                0x08002352       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
-                0x08002352                ADC_SoftwareStartConvCmd
+                0x080023ba       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+                0x080023ba                ADC_SoftwareStartConvCmd
  .text.ADC_RegularChannelConfig
-                0x08002388      0x192 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
-                0x08002388                ADC_RegularChannelConfig
- *fill*         0x0800251a        0x2 
+                0x080023f0      0x192 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+                0x080023f0                ADC_RegularChannelConfig
+ *fill*         0x08002582        0x2 
  .text.DMA_DeInit
-                0x0800251c      0x178 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
-                0x0800251c                DMA_DeInit
+                0x08002584      0x178 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
+                0x08002584                DMA_DeInit
  .text.DMA_Init
-                0x08002694       0x7c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
-                0x08002694                DMA_Init
- .text.DMA_Cmd  0x08002710       0x38 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
-                0x08002710                DMA_Cmd
+                0x080026fc       0x7c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
+                0x080026fc                DMA_Init
+ .text.DMA_Cmd  0x08002778       0x38 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
+                0x08002778                DMA_Cmd
  .text.GPIO_Init
-                0x08002748      0x178 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
-                0x08002748                GPIO_Init
+                0x080027b0      0x178 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
+                0x080027b0                GPIO_Init
  .text.GPIO_StructInit
-                0x080028c0       0x26 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
-                0x080028c0                GPIO_StructInit
+                0x08002928       0x26 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
+                0x08002928                GPIO_StructInit
  .text.GPIO_ReadInputDataBit
-                0x080028e6       0x32 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
-                0x080028e6                GPIO_ReadInputDataBit
+                0x0800294e       0x32 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
+                0x0800294e                GPIO_ReadInputDataBit
  .text.GPIO_PinRemapConfig
-                0x08002918       0xe0 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
-                0x08002918                GPIO_PinRemapConfig
+                0x08002980       0xe0 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
+                0x08002980                GPIO_PinRemapConfig
  .text.TIM1_BRK_IRQHandler
-                0x080029f8       0x18 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
-                0x080029f8                TIM1_BRK_IRQHandler
+                0x08002a60       0x18 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
+                0x08002a60                TIM1_BRK_IRQHandler
  .text.RCC_ADCCLKConfig
-                0x08002a10       0x38 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
-                0x08002a10                RCC_ADCCLKConfig
+                0x08002a78       0x38 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+                0x08002a78                RCC_ADCCLKConfig
  .text.RCC_GetClocksFreq
-                0x08002a48      0x16c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
-                0x08002a48                RCC_GetClocksFreq
+                0x08002ab0      0x16c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+                0x08002ab0                RCC_GetClocksFreq
  .text.RCC_AHBPeriphClockCmd
-                0x08002bb4       0x3c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
-                0x08002bb4                RCC_AHBPeriphClockCmd
+                0x08002c1c       0x3c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+                0x08002c1c                RCC_AHBPeriphClockCmd
  .text.RCC_APB2PeriphClockCmd
-                0x08002bf0       0x3c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
-                0x08002bf0                RCC_APB2PeriphClockCmd
+                0x08002c58       0x3c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+                0x08002c58                RCC_APB2PeriphClockCmd
  .text.RCC_APB1PeriphClockCmd
-                0x08002c2c       0x3c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
-                0x08002c2c                RCC_APB1PeriphClockCmd
+                0x08002c94       0x3c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+                0x08002c94                RCC_APB1PeriphClockCmd
  .text.RCC_APB2PeriphResetCmd
-                0x08002c68       0x3c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
-                0x08002c68                RCC_APB2PeriphResetCmd
+                0x08002cd0       0x3c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+                0x08002cd0                RCC_APB2PeriphResetCmd
  .text.TIM_TimeBaseInit
-                0x08002ca4       0xf8 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x08002ca4                TIM_TimeBaseInit
+                0x08002d0c       0xf8 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x08002d0c                TIM_TimeBaseInit
  .text.TIM_OC1Init
-                0x08002d9c      0x118 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x08002d9c                TIM_OC1Init
+                0x08002e04      0x118 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x08002e04                TIM_OC1Init
  .text.TIM_OC2Init
-                0x08002eb4      0x110 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x08002eb4                TIM_OC2Init
+                0x08002f1c      0x110 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x08002f1c                TIM_OC2Init
  .text.TIM_OC3Init
-                0x08002fc4      0x10c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x08002fc4                TIM_OC3Init
+                0x0800302c      0x10c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x0800302c                TIM_OC3Init
  .text.TIM_OC4Init
-                0x080030d0       0xd0 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x080030d0                TIM_OC4Init
+                0x08003138       0xd0 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x08003138                TIM_OC4Init
  .text.TIM_BDTRConfig
-                0x080031a0       0x4e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x080031a0                TIM_BDTRConfig
- .text.TIM_Cmd  0x080031ee       0x3e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x080031ee                TIM_Cmd
+                0x08003208       0x4e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x08003208                TIM_BDTRConfig
+ .text.TIM_Cmd  0x08003256       0x3e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x08003256                TIM_Cmd
  .text.TIM_CtrlPWMOutputs
-                0x0800322c       0x4a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x0800322c                TIM_CtrlPWMOutputs
+                0x08003294       0x4a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x08003294                TIM_CtrlPWMOutputs
  .text.TIM_ITConfig
-                0x08003276       0x46 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x08003276                TIM_ITConfig
+                0x080032de       0x46 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x080032de                TIM_ITConfig
  .text.TIM_ARRPreloadConfig
-                0x080032bc       0x3e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x080032bc                TIM_ARRPreloadConfig
+                0x08003324       0x3e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x08003324                TIM_ARRPreloadConfig
  .text.TIM_OC1PreloadConfig
-                0x080032fa       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x080032fa                TIM_OC1PreloadConfig
+                0x08003362       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x08003362                TIM_OC1PreloadConfig
  .text.TIM_OC2PreloadConfig
-                0x08003330       0x3a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x08003330                TIM_OC2PreloadConfig
+                0x08003398       0x3a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x08003398                TIM_OC2PreloadConfig
  .text.TIM_OC3PreloadConfig
-                0x0800336a       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x0800336a                TIM_OC3PreloadConfig
+                0x080033d2       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x080033d2                TIM_OC3PreloadConfig
  .text.TIM_OC4PreloadConfig
-                0x080033a0       0x3a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x080033a0                TIM_OC4PreloadConfig
+                0x08003408       0x3a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x08003408                TIM_OC4PreloadConfig
  .text.TIM_CCxCmd
-                0x080033da       0x54 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x080033da                TIM_CCxCmd
+                0x08003442       0x54 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x08003442                TIM_CCxCmd
  .text.TIM_CCxNCmd
-                0x0800342e       0x54 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x0800342e                TIM_CCxNCmd
+                0x08003496       0x54 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x08003496                TIM_CCxNCmd
  .text.TIM_SelectOCxM
-                0x08003482       0xb0 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x08003482                TIM_SelectOCxM
+                0x080034ea       0xb0 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x080034ea                TIM_SelectOCxM
  .text.TIM_SetCompare1
-                0x08003532       0x1c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x08003532                TIM_SetCompare1
+                0x0800359a       0x1c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x0800359a                TIM_SetCompare1
  .text.TIM_SetCompare2
-                0x0800354e       0x1c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x0800354e                TIM_SetCompare2
+                0x080035b6       0x1c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x080035b6                TIM_SetCompare2
  .text.TIM_SetCompare3
-                0x0800356a       0x1c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x0800356a                TIM_SetCompare3
+                0x080035d2       0x1c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x080035d2                TIM_SetCompare3
  .text.TIM_SetCompare4
-                0x08003586       0x1e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x08003586                TIM_SetCompare4
+                0x080035ee       0x1e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x080035ee                TIM_SetCompare4
  .text.TIM_ClearFlag
-                0x080035a4       0x20 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x080035a4                TIM_ClearFlag
+                0x0800360c       0x20 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x0800360c                TIM_ClearFlag
  .text.TIM_GetITStatus
-                0x080035c4       0x52 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x080035c4                TIM_GetITStatus
+                0x0800362c       0x52 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x0800362c                TIM_GetITStatus
  .text.TIM_ClearITPendingBit
-                0x08003616       0x20 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
-                0x08003616                TIM_ClearITPendingBit
- *fill*         0x08003636        0x2 
+                0x0800367e       0x20 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x0800367e                TIM_ClearITPendingBit
+ *fill*         0x0800369e        0x2 
  .text.USART_Init
-                0x08003638      0x174 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
-                0x08003638                USART_Init
+                0x080036a0      0x174 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+                0x080036a0                USART_Init
  .text.USART_Cmd
-                0x080037ac       0x3e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
-                0x080037ac                USART_Cmd
+                0x08003814       0x3e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+                0x08003814                USART_Cmd
  .text.USART_ITConfig
-                0x080037ea       0x8e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
-                0x080037ea                USART_ITConfig
+                0x08003852       0x8e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+                0x08003852                USART_ITConfig
  .text.USART_SendData
-                0x08003878       0x22 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
-                0x08003878                USART_SendData
+                0x080038e0       0x22 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+                0x080038e0                USART_SendData
  .text.USART_ReceiveData
-                0x0800389a       0x1e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
-                0x0800389a                USART_ReceiveData
+                0x08003902       0x1e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+                0x08003902                USART_ReceiveData
  .text.USART_GetFlagStatus
-                0x080038b8       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
-                0x080038b8                USART_GetFlagStatus
+                0x08003920       0x36 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+                0x08003920                USART_GetFlagStatus
  .text.USART_GetITStatus
-                0x080038ee       0xb4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
-                0x080038ee                USART_GetITStatus
- *fill*         0x080039a2        0x2 
- .text.main     0x080039a4       0xa0 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
-                0x080039a4                main
+                0x08003956       0xb4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+                0x08003956                USART_GetITStatus
+ *fill*         0x08003a0a        0x2 
+ .text.getMotorSpeedCmd
+                0x08003a0c       0x54 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+                0x08003a0c                getMotorSpeedCmd
+ .text.process_uart_command
+                0x08003a60       0x8c CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+                0x08003a60                process_uart_command
+ .text.main     0x08003aec       0xac CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+                0x08003aec                main
  .text.Reset_Handler
-                0x08003a44       0x48 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
-                0x08003a44                Reset_Handler
+                0x08003b98       0x48 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
+                0x08003b98                Reset_Handler
  .text.Default_Handler
-                0x08003a8c        0x2 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
-                0x08003a8c                RTC_Alarm_IRQHandler
-                0x08003a8c                EXTI2_IRQHandler
-                0x08003a8c                DebugMon_Handler
-                0x08003a8c                TIM1_CC_IRQHandler
-                0x08003a8c                HardFault_Handler
-                0x08003a8c                SysTick_Handler
-                0x08003a8c                PVD_IRQHandler
-                0x08003a8c                PendSV_Handler
-                0x08003a8c                NMI_Handler
-                0x08003a8c                EXTI3_IRQHandler
-                0x08003a8c                EXTI0_IRQHandler
-                0x08003a8c                I2C2_EV_IRQHandler
-                0x08003a8c                UsageFault_Handler
-                0x08003a8c                ADC1_2_IRQHandler
-                0x08003a8c                SPI1_IRQHandler
-                0x08003a8c                TAMPER_IRQHandler
-                0x08003a8c                DMA1_Channel4_IRQHandler
-                0x08003a8c                RTC_IRQHandler
-                0x08003a8c                DMA1_Channel7_IRQHandler
-                0x08003a8c                CAN1_RX1_IRQHandler
-                0x08003a8c                TIM4_IRQHandler
-                0x08003a8c                I2C1_EV_IRQHandler
-                0x08003a8c                DMA1_Channel6_IRQHandler
-                0x08003a8c                TIM3_IRQHandler
-                0x08003a8c                RCC_IRQHandler
-                0x08003a8c                TIM1_TRG_COM_IRQHandler
-                0x08003a8c                DMA1_Channel1_IRQHandler
-                0x08003a8c                Default_Handler
-                0x08003a8c                EXTI15_10_IRQHandler
-                0x08003a8c                EXTI9_5_IRQHandler
-                0x08003a8c                SPI2_IRQHandler
-                0x08003a8c                MemManage_Handler
-                0x08003a8c                SVC_Handler
-                0x08003a8c                DMA1_Channel5_IRQHandler
-                0x08003a8c                EXTI4_IRQHandler
-                0x08003a8c                USB_LP_CAN1_RX0_IRQHandler
-                0x08003a8c                USB_HP_CAN1_TX_IRQHandler
-                0x08003a8c                DMA1_Channel3_IRQHandler
-                0x08003a8c                WWDG_IRQHandler
-                0x08003a8c                EXTI1_IRQHandler
-                0x08003a8c                USART2_IRQHandler
-                0x08003a8c                I2C2_ER_IRQHandler
-                0x08003a8c                DMA1_Channel2_IRQHandler
-                0x08003a8c                CAN1_SCE_IRQHandler
-                0x08003a8c                FLASH_IRQHandler
-                0x08003a8c                BusFault_Handler
-                0x08003a8c                USART1_IRQHandler
-                0x08003a8c                I2C1_ER_IRQHandler
-                0x08003a8c                USBWakeUp_IRQHandler
- *fill*         0x08003a8e        0x2 
+                0x08003be0        0x2 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
+                0x08003be0                RTC_Alarm_IRQHandler
+                0x08003be0                EXTI2_IRQHandler
+                0x08003be0                DebugMon_Handler
+                0x08003be0                TIM1_CC_IRQHandler
+                0x08003be0                HardFault_Handler
+                0x08003be0                SysTick_Handler
+                0x08003be0                PVD_IRQHandler
+                0x08003be0                PendSV_Handler
+                0x08003be0                NMI_Handler
+                0x08003be0                EXTI3_IRQHandler
+                0x08003be0                EXTI0_IRQHandler
+                0x08003be0                I2C2_EV_IRQHandler
+                0x08003be0                UsageFault_Handler
+                0x08003be0                ADC1_2_IRQHandler
+                0x08003be0                SPI1_IRQHandler
+                0x08003be0                TAMPER_IRQHandler
+                0x08003be0                DMA1_Channel4_IRQHandler
+                0x08003be0                RTC_IRQHandler
+                0x08003be0                DMA1_Channel7_IRQHandler
+                0x08003be0                CAN1_RX1_IRQHandler
+                0x08003be0                TIM4_IRQHandler
+                0x08003be0                I2C1_EV_IRQHandler
+                0x08003be0                DMA1_Channel6_IRQHandler
+                0x08003be0                TIM3_IRQHandler
+                0x08003be0                RCC_IRQHandler
+                0x08003be0                TIM1_TRG_COM_IRQHandler
+                0x08003be0                DMA1_Channel1_IRQHandler
+                0x08003be0                Default_Handler
+                0x08003be0                EXTI15_10_IRQHandler
+                0x08003be0                EXTI9_5_IRQHandler
+                0x08003be0                SPI2_IRQHandler
+                0x08003be0                MemManage_Handler
+                0x08003be0                SVC_Handler
+                0x08003be0                DMA1_Channel5_IRQHandler
+                0x08003be0                EXTI4_IRQHandler
+                0x08003be0                USB_LP_CAN1_RX0_IRQHandler
+                0x08003be0                USB_HP_CAN1_TX_IRQHandler
+                0x08003be0                DMA1_Channel3_IRQHandler
+                0x08003be0                WWDG_IRQHandler
+                0x08003be0                EXTI1_IRQHandler
+                0x08003be0                USART2_IRQHandler
+                0x08003be0                I2C2_ER_IRQHandler
+                0x08003be0                DMA1_Channel2_IRQHandler
+                0x08003be0                CAN1_SCE_IRQHandler
+                0x08003be0                FLASH_IRQHandler
+                0x08003be0                BusFault_Handler
+                0x08003be0                USART1_IRQHandler
+                0x08003be0                I2C1_ER_IRQHandler
+                0x08003be0                USBWakeUp_IRQHandler
+ *fill*         0x08003be2        0x2 
  .text.SystemInit
-                0x08003a90       0x68 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
-                0x08003a90                SystemInit
+                0x08003be4       0x68 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
+                0x08003be4                SystemInit
  .text.SetSysClock
-                0x08003af8        0xc CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
+                0x08003c4c        0xc CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
  .text.SetSysClockTo72
-                0x08003b04      0x100 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
- .text.__cvt    0x08003c04       0xc8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_float.o)
-                0x08003c04                __cvt
+                0x08003c58      0x100 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
+ .text.__cvt    0x08003d58       0xc8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_float.o)
+                0x08003d58                __cvt
  .text.__exponent
-                0x08003ccc       0x74 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_float.o)
-                0x08003ccc                __exponent
+                0x08003e20       0x74 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_float.o)
+                0x08003e20                __exponent
  .text._printf_float
-                0x08003d40      0x458 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_float.o)
-                0x08003d40                _printf_float
+                0x08003e94      0x458 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_float.o)
+                0x08003e94                _printf_float
  .text._printf_common
-                0x08004198       0xe4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x08004198                _printf_common
+                0x080042ec       0xe4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x080042ec                _printf_common
  .text._printf_i
-                0x0800427c      0x23c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x0800427c                _printf_i
- .text.std      0x080044b8       0x6c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x080043d0      0x23c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x080043d0                _printf_i
+ .text.std      0x0800460c       0x6c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
  .text.stdio_exit_handler
-                0x08004524       0x18 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x08004678       0x18 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
  .text.cleanup_stdio
-                0x0800453c       0x40 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x08004690       0x40 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
  .text.global_stdio_init.part.0
-                0x0800457c       0x3c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x080046d0       0x3c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
  .text.__sfp_lock_acquire
-                0x080045b8        0xc C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
-                0x080045b8                __sfp_lock_acquire
+                0x0800470c        0xc C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x0800470c                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x080045c4        0xc C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
-                0x080045c4                __sfp_lock_release
- .text.__sinit  0x080045d0       0x30 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
-                0x080045d0                __sinit
+                0x08004718        0xc C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x08004718                __sfp_lock_release
+ .text.__sinit  0x08004724       0x30 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x08004724                __sinit
  .text._fwalk_sglue
-                0x08004600       0x3c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
-                0x08004600                _fwalk_sglue
- .text.setvbuf  0x0800463c      0x168 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-setvbuf.o)
-                0x0800463c                setvbuf
- .text.__sread  0x080047a4       0x22 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
-                0x080047a4                __sread
+                0x08004754       0x3c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
+                0x08004754                _fwalk_sglue
+ .text.printf   0x08004790       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+                0x08004790                iprintf
+                0x08004790                printf
+ .text.setvbuf  0x080047b4      0x168 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-setvbuf.o)
+                0x080047b4                setvbuf
+ .text.__sread  0x0800491c       0x22 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+                0x0800491c                __sread
  .text.__swrite
-                0x080047c6       0x38 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
-                0x080047c6                __swrite
- .text.__sseek  0x080047fe       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
-                0x080047fe                __sseek
+                0x0800493e       0x38 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+                0x0800493e                __swrite
+ .text.__sseek  0x08004976       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+                0x08004976                __sseek
  .text.__sclose
-                0x08004822        0x8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
-                0x08004822                __sclose
+                0x0800499a        0x8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+                0x0800499a                __sclose
  .text.__swbuf_r
-                0x0800482a       0x7c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
-                0x0800482a                __swbuf_r
- *fill*         0x080048a6        0x2 
+                0x080049a2       0x7c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+                0x080049a2                __swbuf_r
+ *fill*         0x08004a1e        0x2 
  .text.__swsetup_r
-                0x080048a8       0xac C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
-                0x080048a8                __swsetup_r
- .text.memset   0x08004954       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
-                0x08004954                memset
+                0x08004a20       0xac C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+                0x08004a20                __swsetup_r
+ .text.memset   0x08004acc       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
+                0x08004acc                memset
  .text._localeconv_r
-                0x08004964        0x8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-localeconv.o)
-                0x08004964                _localeconv_r
+                0x08004adc        0x8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-localeconv.o)
+                0x08004adc                _localeconv_r
  .text._close_r
-                0x0800496c       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
-                0x0800496c                _close_r
+                0x08004ae4       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
+                0x08004ae4                _close_r
  .text._lseek_r
-                0x0800498c       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
-                0x0800498c                _lseek_r
- .text._read_r  0x080049b0       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
-                0x080049b0                _read_r
+                0x08004b04       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
+                0x08004b04                _lseek_r
+ .text._read_r  0x08004b28       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
+                0x08004b28                _read_r
  .text._write_r
-                0x080049d4       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
-                0x080049d4                _write_r
+                0x08004b4c       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
+                0x08004b4c                _write_r
  .text.__libc_init_array
-                0x080049f8       0x48 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
-                0x080049f8                __libc_init_array
+                0x08004b70       0x48 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
+                0x08004b70                __libc_init_array
  .text.__retarget_lock_init_recursive
-                0x08004a40        0x2 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
-                0x08004a40                __retarget_lock_init_recursive
+                0x08004bb8        0x2 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+                0x08004bb8                __retarget_lock_init_recursive
  .text.__retarget_lock_acquire_recursive
-                0x08004a42        0x2 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
-                0x08004a42                __retarget_lock_acquire_recursive
+                0x08004bba        0x2 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+                0x08004bba                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08004a44        0x2 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
-                0x08004a44                __retarget_lock_release_recursive
- .text.memchr   0x08004a46       0x1c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
-                0x08004a46                memchr
- .text.quorem   0x08004a62      0x110 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-dtoa.o)
- *fill*         0x08004b72        0x6 
- .text._dtoa_r  0x08004b78      0xb7c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-dtoa.o)
-                0x08004b78                _dtoa_r
- .text._free_r  0x080056f4       0x90 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
-                0x080056f4                _free_r
- .text.malloc   0x08005784       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-malloc.o)
-                0x08005784                malloc
+                0x08004bbc        0x2 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+                0x08004bbc                __retarget_lock_release_recursive
+ .text.memchr   0x08004bbe       0x1c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+                0x08004bbe                memchr
+ .text.quorem   0x08004bda      0x110 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-dtoa.o)
+ *fill*         0x08004cea        0x6 
+ .text._dtoa_r  0x08004cf0      0xb7c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-dtoa.o)
+                0x08004cf0                _dtoa_r
+ .text._free_r  0x0800586c       0x90 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
+                0x0800586c                _free_r
+ .text.malloc   0x080058fc       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-malloc.o)
+                0x080058fc                malloc
  .text.sbrk_aligned
-                0x08005794       0x44 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+                0x0800590c       0x44 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x080057d8      0x100 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
-                0x080057d8                _malloc_r
+                0x08005950      0x100 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+                0x08005950                _malloc_r
  .text.__malloc_lock
-                0x080058d8        0xc C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
-                0x080058d8                __malloc_lock
+                0x08005a50        0xc C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+                0x08005a50                __malloc_lock
  .text.__malloc_unlock
-                0x080058e4        0xc C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
-                0x080058e4                __malloc_unlock
- .text._Balloc  0x080058f0       0x80 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x080058f0                _Balloc
- .text._Bfree   0x08005970       0x44 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x08005970                _Bfree
+                0x08005a5c        0xc C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+                0x08005a5c                __malloc_unlock
+ .text._Balloc  0x08005a68       0x80 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x08005a68                _Balloc
+ .text._Bfree   0x08005ae8       0x44 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x08005ae8                _Bfree
  .text.__multadd
-                0x080059b4       0x8c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x080059b4                __multadd
+                0x08005b2c       0x8c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x08005b2c                __multadd
  .text.__hi0bits
-                0x08005a40       0x3e C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x08005a40                __hi0bits
+                0x08005bb8       0x3e C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x08005bb8                __hi0bits
  .text.__lo0bits
-                0x08005a7e       0x5a C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x08005a7e                __lo0bits
- .text.__i2b    0x08005ad8       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x08005ad8                __i2b
+                0x08005bf6       0x5a C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x08005bf6                __lo0bits
+ .text.__i2b    0x08005c50       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x08005c50                __i2b
  .text.__multiply
-                0x08005b04      0x144 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x08005b04                __multiply
+                0x08005c7c      0x144 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x08005c7c                __multiply
  .text.__pow5mult
-                0x08005c48       0xb4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x08005c48                __pow5mult
+                0x08005dc0       0xb4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x08005dc0                __pow5mult
  .text.__lshift
-                0x08005cfc       0xd8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x08005cfc                __lshift
- .text.__mcmp   0x08005dd4       0x36 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x08005dd4                __mcmp
- *fill*         0x08005e0a        0x2 
- .text.__mdiff  0x08005e0c      0x128 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x08005e0c                __mdiff
- .text.__d2b    0x08005f34       0xb0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x08005f34                __d2b
+                0x08005e74       0xd8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x08005e74                __lshift
+ .text.__mcmp   0x08005f4c       0x36 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x08005f4c                __mcmp
+ *fill*         0x08005f82        0x2 
+ .text.__mdiff  0x08005f84      0x128 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x08005f84                __mdiff
+ .text.__d2b    0x080060ac       0xb0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x080060ac                __d2b
  .text.__sfputc_r
-                0x08005fe4       0x2a C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x0800615c       0x2a C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x0800600e       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
-                0x0800600e                __sfputs_r
- *fill*         0x08006032        0x2 
+                0x08006186       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x08006186                __sfputs_r
+ *fill*         0x080061aa        0x2 
  .text._vfprintf_r
-                0x08006034      0x230 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
-                0x08006034                _vfprintf_r
-                0x08006034                _vfiprintf_r
+                0x080061ac      0x230 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x080061ac                _vfprintf_r
+                0x080061ac                _vfiprintf_r
  .text.__sflush_r
-                0x08006264      0x100 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
-                0x08006264                __sflush_r
+                0x080063dc      0x100 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
+                0x080063dc                __sflush_r
  .text._fflush_r
-                0x08006364       0x50 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
-                0x08006364                _fflush_r
+                0x080064dc       0x50 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
+                0x080064dc                _fflush_r
  .text.__swhatbuf_r
-                0x080063b4       0x4a C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
-                0x080063b4                __swhatbuf_r
+                0x0800652c       0x4a C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+                0x0800652c                __swhatbuf_r
  .text.__smakebuf_r
-                0x080063fe       0x78 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
-                0x080063fe                __smakebuf_r
- *fill*         0x08006476        0x2 
+                0x08006576       0x78 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+                0x08006576                __smakebuf_r
+ *fill*         0x080065ee        0x2 
  .text._fstat_r
-                0x08006478       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
-                0x08006478                _fstat_r
+                0x080065f0       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+                0x080065f0                _fstat_r
  .text._isatty_r
-                0x0800649c       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
-                0x0800649c                _isatty_r
- .text._sbrk_r  0x080064bc       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
-                0x080064bc                _sbrk_r
- .text.memcpy   0x080064dc       0x1c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
-                0x080064dc                memcpy
+                0x08006614       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+                0x08006614                _isatty_r
+ .text._sbrk_r  0x08006634       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
+                0x08006634                _sbrk_r
+ .text.memcpy   0x08006654       0x1c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
+                0x08006654                memcpy
  .text.__assert_func
-                0x080064f8       0x3c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-assert.o)
-                0x080064f8                __assert_func
+                0x08006670       0x3c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-assert.o)
+                0x08006670                __assert_func
  .text._calloc_r
-                0x08006534       0x28 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-callocr.o)
-                0x08006534                _calloc_r
+                0x080066ac       0x28 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-callocr.o)
+                0x080066ac                _calloc_r
  .text.__ascii_mbtowc
-                0x0800655c       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mbtowc_r.o)
-                0x0800655c                __ascii_mbtowc
+                0x080066d4       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mbtowc_r.o)
+                0x080066d4                __ascii_mbtowc
  .text.__ascii_wctomb
-                0x08006580       0x1a C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wctomb_r.o)
-                0x08006580                __ascii_wctomb
- *fill*         0x0800659a        0x2 
- .text.fprintf  0x0800659c       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fprintf.o)
-                0x0800659c                fiprintf
-                0x0800659c                fprintf
- .text.abort    0x080065c0        0xe C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-abort.o)
-                0x080065c0                abort
+                0x080066f8       0x1a C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wctomb_r.o)
+                0x080066f8                __ascii_wctomb
+ *fill*         0x08006712        0x2 
+ .text.fprintf  0x08006714       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fprintf.o)
+                0x08006714                fiprintf
+                0x08006714                fprintf
+ .text.abort    0x08006738        0xe C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-abort.o)
+                0x08006738                abort
  .text._raise_r
-                0x080065ce       0x50 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signal.o)
-                0x080065ce                _raise_r
- *fill*         0x0800661e        0x2 
- .text.raise    0x08006620       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signal.o)
-                0x08006620                raise
- .text._kill_r  0x08006630       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signalr.o)
-                0x08006630                _kill_r
+                0x08006746       0x50 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signal.o)
+                0x08006746                _raise_r
+ *fill*         0x08006796        0x2 
+ .text.raise    0x08006798       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signal.o)
+                0x08006798                raise
+ .text._kill_r  0x080067a8       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signalr.o)
+                0x080067a8                _kill_r
  .text._getpid_r
-                0x08006654        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signalr.o)
-                0x08006654                _getpid_r
- .text._fstat   0x08006658       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(fstat.o)
-                0x08006658                _fstat
- .text._getpid  0x08006668       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(getpid.o)
-                0x08006668                _getpid
- .text._kill    0x08006678       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(kill.o)
-                0x08006678                _kill
- .text._sbrk    0x08006688       0x1c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(sbrk.o)
-                0x08006688                _sbrk
- .text._exit    0x080066a4        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(_exit.o)
-                0x080066a4                _exit
+                0x080067cc        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signalr.o)
+                0x080067cc                _getpid_r
+ .text._fstat   0x080067d0       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(fstat.o)
+                0x080067d0                _fstat
+ .text._getpid  0x080067e0       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(getpid.o)
+                0x080067e0                _getpid
+ .text._kill    0x080067f0       0x10 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(kill.o)
+                0x080067f0                _kill
+ .text._sbrk    0x08006800       0x1c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(sbrk.o)
+                0x08006800                _sbrk
+ .text._exit    0x0800681c        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(_exit.o)
+                0x0800681c                _exit
  *(.glue_7)
- .glue_7        0x080066a8        0x0 linker stubs
+ .glue_7        0x08006820        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080066a8        0x0 linker stubs
+ .glue_7t       0x08006820        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x080066a8        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x08006820        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x080066a8        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
-                0x080066a8                _init
- .init          0x080066ac        0x8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x08006820        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
+                0x08006820                _init
+ .init          0x08006824        0x8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x080066b4        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
-                0x080066b4                _fini
- .fini          0x080066b8        0x8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
-                0x080066c0                        . = ALIGN (0x4)
-                0x080066c0                        _etext = .
+ .fini          0x0800682c        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
+                0x0800682c                _fini
+ .fini          0x08006830        0x8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
+                0x08006838                        . = ALIGN (0x4)
+                0x08006838                        _etext = .
 
-.vfp11_veneer   0x080066c0        0x0
- .vfp11_veneer  0x080066c0        0x0 linker stubs
+.vfp11_veneer   0x08006838        0x0
+ .vfp11_veneer  0x08006838        0x0 linker stubs
 
-.v4_bx          0x080066c0        0x0
- .v4_bx         0x080066c0        0x0 linker stubs
+.v4_bx          0x08006838        0x0
+ .v4_bx         0x08006838        0x0 linker stubs
 
-.iplt           0x080066c0        0x0
- .iplt          0x080066c0        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x08006838        0x0
+ .iplt          0x08006838        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x080066c0      0x38c
-                0x080066c0                        . = ALIGN (0x4)
+.rodata         0x08006838      0x3c4
+                0x08006838                        . = ALIGN (0x4)
  *(.rodata)
+ .rodata        0x08006838       0x38 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
  *(.rodata*)
  .rodata.APBAHBPrescTable
-                0x080066c0       0x10 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+                0x08006870       0x10 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
  .rodata.ADCPrescTable
-                0x080066d0        0x4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+                0x08006880        0x4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
  .rodata._printf_float.str1.1
-                0x080066d4      0x173 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_float.o)
+                0x08006884      0x173 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_float.o)
                                  0x12 (size before relaxing)
  .rodata._printf_i.str1.1
-                0x08006847       0x22 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x080069f7       0x22 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
  .rodata._dtoa_r.str1.1
-                0x08006847       0x90 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-dtoa.o)
+                0x080069f7       0x90 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-dtoa.o)
  .rodata._Balloc.str1.1
-                0x08006847       0x71 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x080069f7       0x71 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
  .rodata.__multadd.str1.1
-                0x08006847       0x11 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
- *fill*         0x08006847        0x1 
- .rodata.p05.0  0x08006848        0xc C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
- *fill*         0x08006854        0x4 
+                0x080069f7       0x11 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+ *fill*         0x080069f7        0x1 
+ .rodata.p05.0  0x080069f8        0xc C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+ *fill*         0x08006a04        0x4 
  .rodata.__mprec_bigtens
-                0x08006858       0x28 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x08006858                __mprec_bigtens
+                0x08006a08       0x28 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x08006a08                __mprec_bigtens
  .rodata.__mprec_tens
-                0x08006880       0xc8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
-                0x08006880                __mprec_tens
+                0x08006a30       0xc8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x08006a30                __mprec_tens
  .rodata._vfprintf_r.str1.1
-                0x08006948       0x11 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x08006af8       0x11 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
  .rodata._setlocale_r.str1.1
-                0x08006948        0x9 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-locale.o)
+                0x08006af8        0x9 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-locale.o)
  .rodata.str1.1
-                0x08006948        0x2 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-locale.o)
+                0x08006af8        0x2 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-locale.o)
  .rodata.__assert_func.str1.1
-                0x08006948       0x3d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-assert.o)
+                0x08006af8       0x3d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-assert.o)
  .rodata._ctype_
-                0x08006948      0x101 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-ctype_.o)
-                0x08006948                _ctype_
-                0x08006a4c                        . = ALIGN (0x4)
- *fill*         0x08006a49        0x3 
+                0x08006af8      0x101 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-ctype_.o)
+                0x08006af8                _ctype_
+                0x08006bfc                        . = ALIGN (0x4)
+ *fill*         0x08006bf9        0x3 
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08006a4c        0x8
-                0x08006a4c                        __exidx_start = .
+.ARM            0x08006bfc        0x8
+                0x08006bfc                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08006a4c        0x8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
-                0x08006a54                        __exidx_end = .
+ .ARM.exidx     0x08006bfc        0x8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
+ .ARM.exidx     0x08006c04        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
+                                  0x8 (size before relaxing)
+                0x08006c04                        __exidx_end = .
 
-.rel.dyn        0x08006a54        0x0
- .rel.iplt      0x08006a54        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x08006c04        0x0
+ .rel.iplt      0x08006c04        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.preinit_array  0x08006a54        0x0
-                0x08006a54                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08006c04        0x0
+                0x08006c04                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08006a54                        PROVIDE (__preinit_array_end = .)
+                0x08006c04                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x08006a54        0x4
-                0x08006a54                        PROVIDE (__init_array_start = .)
+.init_array     0x08006c04        0x4
+                0x08006c04                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08006a54        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x08006a58                        PROVIDE (__init_array_end = .)
+ .init_array    0x08006c04        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x08006c08                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x08006a58        0x4
+.fini_array     0x08006c08        0x4
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08006a58        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+ .fini_array    0x08006c08        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x08006a5c                        _sidata = LOADADDR (.data)
+                0x08006c0c                        _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x28c load address 0x08006a5c
+.data           0x20000000      0x28c load address 0x08006c0c
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -2565,17 +2571,17 @@ LOAD C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-no
                 0x2000028c                        _edata = .
 
 .tm_clone_table
-                0x2000028c        0x0 load address 0x08006ce8
+                0x2000028c        0x0 load address 0x08006e98
  .tm_clone_table
                 0x2000028c        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  .tm_clone_table
                 0x2000028c        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtend.o
 
-.igot.plt       0x2000028c        0x0 load address 0x08006ce8
+.igot.plt       0x2000028c        0x0 load address 0x08006e98
  .igot.plt      0x2000028c        0x0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x2000028c                        . = ALIGN (0x4)
 
-.bss            0x2000028c      0x3d0 load address 0x08006ce8
+.bss            0x2000028c      0x3d4 load address 0x08006e98
                 0x2000028c                        _sbss = .
                 0x2000028c                        __bss_start__ = _sbss
  *(.bss)
@@ -2608,50 +2614,51 @@ LOAD C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-no
  .bss.logicContr
                 0x2000047c        0xa CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
                 0x2000047c                logicContr
- .bss.switchRX  0x20000486        0x1 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
-                0x20000486                switchRX
- *fill*         0x20000487        0x1 
+ .bss.rxcmd     0x20000486        0x2 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+                0x20000486                rxcmd
+ .bss.switchRX  0x20000488        0x1 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+                0x20000488                switchRX
+ *fill*         0x20000489        0x3 
  .bss.uart_rx_buffer
-                0x20000488       0x80 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
-                0x20000488                uart_rx_buffer
+                0x2000048c       0x80 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+                0x2000048c                uart_rx_buffer
  .bss.uart_rx_write_ptr
-                0x20000508        0x2 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
-                0x20000508                uart_rx_write_ptr
+                0x2000050c        0x2 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+                0x2000050c                uart_rx_write_ptr
  .bss.uart_rx_line_complete
-                0x2000050a        0x1 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
-                0x2000050a                uart_rx_line_complete
- *fill*         0x2000050b        0x1 
- .bss.__sf      0x2000050c      0x138 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
-                0x2000050c                __sf
+                0x2000050e        0x1 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+                0x2000050e                uart_rx_line_complete
+ *fill*         0x2000050f        0x1 
+ .bss.__sf      0x20000510      0x138 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x20000510                __sf
  .bss.__stdio_exit_handler
-                0x20000644        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
-                0x20000644                __stdio_exit_handler
- .bss.errno     0x20000648        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
-                0x20000648                errno
+                0x20000648        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x20000648                __stdio_exit_handler
+ .bss.errno     0x2000064c        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
+                0x2000064c                errno
  .bss.__lock___malloc_recursive_mutex
-                0x2000064c        0x1 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
-                0x2000064c                __lock___malloc_recursive_mutex
+                0x20000650        0x1 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+                0x20000650                __lock___malloc_recursive_mutex
  .bss.__lock___sfp_recursive_mutex
-                0x2000064d        0x1 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
-                0x2000064d                __lock___sfp_recursive_mutex
- *fill*         0x2000064e        0x2 
+                0x20000651        0x1 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+                0x20000651                __lock___sfp_recursive_mutex
+ *fill*         0x20000652        0x2 
  .bss.__malloc_sbrk_start
-                0x20000650        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
-                0x20000650                __malloc_sbrk_start
- .bss.__malloc_free_list
                 0x20000654        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
-                0x20000654                __malloc_free_list
+                0x20000654                __malloc_sbrk_start
+ .bss.__malloc_free_list
+                0x20000658        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+                0x20000658                __malloc_free_list
  .bss.heap_end.0
-                0x20000658        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(sbrk.o)
+                0x2000065c        0x4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(sbrk.o)
  *(COMMON)
-                0x2000065c                        . = ALIGN (0x4)
-                0x2000065c                        _ebss = .
-                0x2000065c                        __bss_end__ = _ebss
+                0x20000660                        . = ALIGN (0x4)
+                0x20000660                        _ebss = .
+                0x20000660                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x2000065c      0x604 load address 0x08006ce8
+                0x20000660      0x600 load address 0x08006e98
                 0x20000660                        . = ALIGN (0x8)
- *fill*         0x2000065c        0x4 
                 0x20000660                        PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
                 0x20000860                        . = (. + _Min_Heap_Size)
@@ -2725,162 +2732,166 @@ LOAD C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-no
  .ARM.attributes
                 0x000004a3       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
  .ARM.attributes
-                0x000004d0       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-setvbuf.o)
+                0x000004d0       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
  .ARM.attributes
-                0x000004fd       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+                0x000004fd       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-setvbuf.o)
  .ARM.attributes
-                0x0000052a       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+                0x0000052a       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
  .ARM.attributes
-                0x00000557       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+                0x00000557       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
  .ARM.attributes
-                0x00000584       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
+                0x00000584       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
  .ARM.attributes
-                0x000005b1       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-localeconv.o)
+                0x000005b1       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
  .ARM.attributes
-                0x000005de       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
+                0x000005de       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-localeconv.o)
  .ARM.attributes
-                0x0000060b       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
+                0x0000060b       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
  .ARM.attributes
-                0x00000638       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
+                0x00000638       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
  .ARM.attributes
-                0x00000665       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
+                0x00000665       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
  .ARM.attributes
-                0x00000692       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
+                0x00000692       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
  .ARM.attributes
-                0x000006bf       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
+                0x000006bf       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
  .ARM.attributes
-                0x000006ec       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
+                0x000006ec       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
  .ARM.attributes
-                0x00000719       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+                0x00000719       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
  .ARM.attributes
-                0x00000746       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+                0x00000746       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
  .ARM.attributes
-                0x00000773       0x17 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
+                0x00000773       0x1b C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
  .ARM.attributes
-                0x0000078a       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-dtoa.o)
+                0x0000078e       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
  .ARM.attributes
-                0x000007b7       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
+                0x000007bb       0x17 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
  .ARM.attributes
-                0x000007e4       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-malloc.o)
+                0x000007d2       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-dtoa.o)
  .ARM.attributes
-                0x00000811       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+                0x000007ff       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
  .ARM.attributes
-                0x0000083e       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+                0x0000082c       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-malloc.o)
  .ARM.attributes
-                0x0000086b       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+                0x00000859       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
  .ARM.attributes
-                0x00000898       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x00000886       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
  .ARM.attributes
-                0x000008c5       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
+                0x000008b3       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
  .ARM.attributes
-                0x000008f2       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+                0x000008e0       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
  .ARM.attributes
-                0x0000091f       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-locale.o)
+                0x0000090d       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
  .ARM.attributes
-                0x0000094c       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+                0x0000093a       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
  .ARM.attributes
-                0x00000979       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+                0x00000967       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-locale.o)
  .ARM.attributes
-                0x000009a6       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
+                0x00000994       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
  .ARM.attributes
-                0x000009d3       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
+                0x000009c1       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
  .ARM.attributes
-                0x00000a00       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-assert.o)
+                0x000009ee       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
  .ARM.attributes
-                0x00000a2d       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-callocr.o)
+                0x00000a1b       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
  .ARM.attributes
-                0x00000a5a       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mbtowc_r.o)
+                0x00000a48       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-assert.o)
  .ARM.attributes
-                0x00000a87       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wctomb_r.o)
+                0x00000a75       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-callocr.o)
  .ARM.attributes
-                0x00000ab4       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-ctype_.o)
+                0x00000aa2       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mbtowc_r.o)
  .ARM.attributes
-                0x00000ae1       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fprintf.o)
+                0x00000acf       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wctomb_r.o)
  .ARM.attributes
-                0x00000b0e       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-abort.o)
+                0x00000afc       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-ctype_.o)
  .ARM.attributes
-                0x00000b3b       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signal.o)
+                0x00000b29       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fprintf.o)
  .ARM.attributes
-                0x00000b68       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signalr.o)
+                0x00000b56       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-abort.o)
  .ARM.attributes
-                0x00000b95       0x1d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+                0x00000b83       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signal.o)
  .ARM.attributes
-                0x00000bb2       0x1d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+                0x00000bb0       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signalr.o)
  .ARM.attributes
-                0x00000bcf       0x1d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
+                0x00000bdd       0x1d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
-                0x00000bec       0x1d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
+                0x00000bfa       0x1d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
  .ARM.attributes
-                0x00000c09       0x1d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
+                0x00000c17       0x1d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
  .ARM.attributes
-                0x00000c26       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(fstat.o)
+                0x00000c34       0x1d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
  .ARM.attributes
-                0x00000c53       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(getpid.o)
+                0x00000c51       0x1d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
  .ARM.attributes
-                0x00000c80       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(kill.o)
+                0x00000c6e       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(fstat.o)
  .ARM.attributes
-                0x00000cad       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(sbrk.o)
+                0x00000c9b       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(getpid.o)
  .ARM.attributes
-                0x00000cda       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(_exit.o)
+                0x00000cc8       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(kill.o)
  .ARM.attributes
-                0x00000d07       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtend.o
+                0x00000cf5       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(sbrk.o)
  .ARM.attributes
-                0x00000d34       0x1d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
+                0x00000d22       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(_exit.o)
+ .ARM.attributes
+                0x00000d4f       0x2d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtend.o
+ .ARM.attributes
+                0x00000d7c       0x1d C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
 OUTPUT(STM32_BLDC_Hall.elf elf32-littlearm)
 LOAD linker stubs
 LOAD C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libc.a
 LOAD C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libm.a
 LOAD C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0xa067
+.debug_info     0x00000000     0xa163
  .debug_info    0x00000000      0x771 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
  .debug_info    0x00000771      0x3d0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
  .debug_info    0x00000b41      0x2dd CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/IQ_math.c.obj
  .debug_info    0x00000e1e      0x199 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/PI_Cale.c.obj
- .debug_info    0x00000fb7      0x2c3 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Task_function.c.obj
- .debug_info    0x0000127a      0x341 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
- .debug_info    0x000015bb      0x8d4 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
- .debug_info    0x00001e8f      0x8cb CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
- .debug_info    0x0000275a      0x517 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
- .debug_info    0x00002c71      0xae2 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
- .debug_info    0x00003753      0xf7a CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
- .debug_info    0x000046cd      0x4e3 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
- .debug_info    0x00004bb0      0xb3e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
- .debug_info    0x000056ee      0x432 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
- .debug_info    0x00005b20      0x6cc CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
- .debug_info    0x000061ec      0x2f7 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
- .debug_info    0x000064e3      0x854 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
- .debug_info    0x00006d37     0x1bfd CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
- .debug_info    0x00008934      0x9ed CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
- .debug_info    0x00009321      0x8e5 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
- .debug_info    0x00009c06       0x30 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
- .debug_info    0x00009c36      0x431 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
+ .debug_info    0x00000fb7      0x2f0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Task_function.c.obj
+ .debug_info    0x000012a7      0x341 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
+ .debug_info    0x000015e8      0x938 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
+ .debug_info    0x00001f20      0x8cb CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+ .debug_info    0x000027eb      0x517 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
+ .debug_info    0x00002d02      0xae2 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
+ .debug_info    0x000037e4      0xf7a CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+ .debug_info    0x0000475e      0x4e3 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
+ .debug_info    0x00004c41      0xb3e CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+ .debug_info    0x0000577f      0x432 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
+ .debug_info    0x00005bb1      0x6cc CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
+ .debug_info    0x0000627d      0x2f7 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
+ .debug_info    0x00006574      0x854 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+ .debug_info    0x00006dc8     0x1bfd CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+ .debug_info    0x000089c5      0x9ed CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+ .debug_info    0x000093b2      0x950 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+ .debug_info    0x00009d02       0x30 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
+ .debug_info    0x00009d32      0x431 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
 
-.debug_abbrev   0x00000000     0x22d1
+.debug_abbrev   0x00000000     0x2358
  .debug_abbrev  0x00000000      0x20e CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
  .debug_abbrev  0x0000020e      0x195 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
  .debug_abbrev  0x000003a3      0x140 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/IQ_math.c.obj
  .debug_abbrev  0x000004e3       0xed CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/PI_Cale.c.obj
- .debug_abbrev  0x000005d0       0xc4 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Task_function.c.obj
- .debug_abbrev  0x00000694      0x14f CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
- .debug_abbrev  0x000007e3      0x15b CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
- .debug_abbrev  0x0000093e      0x177 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
- .debug_abbrev  0x00000ab5      0x129 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
- .debug_abbrev  0x00000bde      0x26e CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
- .debug_abbrev  0x00000e4c      0x35b CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
- .debug_abbrev  0x000011a7      0x18a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
- .debug_abbrev  0x00001331      0x1da CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
- .debug_abbrev  0x0000150b      0x195 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
- .debug_abbrev  0x000016a0      0x235 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
- .debug_abbrev  0x000018d5       0xd4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
- .debug_abbrev  0x000019a9      0x1e1 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
- .debug_abbrev  0x00001b8a      0x1fb CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
- .debug_abbrev  0x00001d85      0x1bd CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
- .debug_abbrev  0x00001f42      0x1b6 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
- .debug_abbrev  0x000020f8       0x24 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
- .debug_abbrev  0x0000211c      0x1b5 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
+ .debug_abbrev  0x000005d0       0xd4 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Task_function.c.obj
+ .debug_abbrev  0x000006a4      0x14f CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
+ .debug_abbrev  0x000007f3      0x189 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
+ .debug_abbrev  0x0000097c      0x177 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+ .debug_abbrev  0x00000af3      0x129 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
+ .debug_abbrev  0x00000c1c      0x26e CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
+ .debug_abbrev  0x00000e8a      0x35b CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+ .debug_abbrev  0x000011e5      0x18a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
+ .debug_abbrev  0x0000136f      0x1da CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+ .debug_abbrev  0x00001549      0x195 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
+ .debug_abbrev  0x000016de      0x235 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
+ .debug_abbrev  0x00001913       0xd4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
+ .debug_abbrev  0x000019e7      0x1e1 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+ .debug_abbrev  0x00001bc8      0x1fb CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+ .debug_abbrev  0x00001dc3      0x1bd CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+ .debug_abbrev  0x00001f80      0x1ff CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+ .debug_abbrev  0x0000217f       0x24 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
+ .debug_abbrev  0x000021a3      0x1b5 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
 
-.debug_aranges  0x00000000      0xae8
+.debug_aranges  0x00000000      0xaf8
  .debug_aranges
                 0x00000000       0x40 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
  .debug_aranges
@@ -2894,40 +2905,40 @@ LOAD C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-no
  .debug_aranges
                 0x00000138       0x28 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
  .debug_aranges
-                0x00000160       0x20 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
+                0x00000160       0x28 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
  .debug_aranges
-                0x00000180       0x58 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+                0x00000188       0x58 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
  .debug_aranges
-                0x000001d8       0x20 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
+                0x000001e0       0x20 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
  .debug_aranges
-                0x000001f8       0x50 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
+                0x00000200       0x50 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
  .debug_aranges
-                0x00000248       0x60 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+                0x00000250       0x60 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
  .debug_aranges
-                0x000002a8       0x40 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
+                0x000002b0       0x40 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
  .debug_aranges
-                0x000002e8      0x138 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+                0x000002f0      0x138 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
  .debug_aranges
-                0x00000420       0x70 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
+                0x00000428       0x70 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
  .debug_aranges
-                0x00000490       0xa8 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
+                0x00000498       0xa8 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
  .debug_aranges
-                0x00000538       0x20 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
+                0x00000540       0x20 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
  .debug_aranges
-                0x00000558      0x118 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+                0x00000560      0x118 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
  .debug_aranges
-                0x00000670      0x2f0 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x00000678      0x2f0 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
  .debug_aranges
-                0x00000960      0x100 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+                0x00000968      0x100 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
  .debug_aranges
-                0x00000a60       0x28 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+                0x00000a68       0x30 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
  .debug_aranges
-                0x00000a88       0x28 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
+                0x00000a98       0x28 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
  .debug_aranges
-                0x00000ab0       0x38 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
+                0x00000ac0       0x38 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
 
 .debug_rnglists
-                0x00000000      0x7fa
+                0x00000000      0x807
  .debug_rnglists
                 0x00000000       0x2d CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
  .debug_rnglists
@@ -2941,86 +2952,86 @@ LOAD C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-no
  .debug_rnglists
                 0x000000d8       0x1a CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
  .debug_rnglists
-                0x000000f2       0x14 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
+                0x000000f2       0x1a CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
  .debug_rnglists
-                0x00000106       0x3e CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+                0x0000010c       0x3e CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
  .debug_rnglists
-                0x00000144       0x14 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
+                0x0000014a       0x14 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
  .debug_rnglists
-                0x00000158       0x39 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
+                0x0000015e       0x39 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
  .debug_rnglists
-                0x00000191       0x51 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+                0x00000197       0x51 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
  .debug_rnglists
-                0x000001e2       0x2c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
+                0x000001e8       0x2c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
  .debug_rnglists
-                0x0000020e       0xe8 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+                0x00000214       0xe8 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
  .debug_rnglists
-                0x000002f6       0x50 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
+                0x000002fc       0x50 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
  .debug_rnglists
-                0x00000346       0x7d CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
+                0x0000034c       0x7d CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
  .debug_rnglists
-                0x000003c3       0x13 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
+                0x000003c9       0x13 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
  .debug_rnglists
-                0x000003d6       0xce CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+                0x000003dc       0xce CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
  .debug_rnglists
-                0x000004a4      0x23d CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+                0x000004aa      0x23d CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
  .debug_rnglists
-                0x000006e1       0xbf CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+                0x000006e7       0xbf CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
  .debug_rnglists
-                0x000007a0       0x1a CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+                0x000007a6       0x21 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
  .debug_rnglists
-                0x000007ba       0x19 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
+                0x000007c7       0x19 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
  .debug_rnglists
-                0x000007d3       0x27 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
+                0x000007e0       0x27 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
 
-.debug_line     0x00000000     0x6706
+.debug_line     0x00000000     0x6827
  .debug_line    0x00000000      0x3e1 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
  .debug_line    0x000003e1      0x399 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
  .debug_line    0x0000077a      0x426 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/IQ_math.c.obj
  .debug_line    0x00000ba0      0x22f CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/PI_Cale.c.obj
- .debug_line    0x00000dcf      0x262 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Task_function.c.obj
- .debug_line    0x00001031      0x495 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
- .debug_line    0x000014c6      0x306 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
- .debug_line    0x000017cc      0x32c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
- .debug_line    0x00001af8      0x285 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
- .debug_line    0x00001d7d      0x4c9 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
- .debug_line    0x00002246      0x50e CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
- .debug_line    0x00002754      0x307 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
- .debug_line    0x00002a5b      0x87a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
- .debug_line    0x000032d5      0x46a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
- .debug_line    0x0000373f      0x5ba CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
- .debug_line    0x00003cf9      0x222 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
- .debug_line    0x00003f1b      0x776 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
- .debug_line    0x00004691     0x1259 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
- .debug_line    0x000058ea      0x74a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
- .debug_line    0x00006034      0x32a CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
- .debug_line    0x0000635e       0x79 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
- .debug_line    0x000063d7      0x32f CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
+ .debug_line    0x00000dcf      0x2cd CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Task_function.c.obj
+ .debug_line    0x0000109c      0x495 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
+ .debug_line    0x00001531      0x32f CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
+ .debug_line    0x00001860      0x32c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+ .debug_line    0x00001b8c      0x285 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
+ .debug_line    0x00001e11      0x4c9 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
+ .debug_line    0x000022da      0x50e CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+ .debug_line    0x000027e8      0x307 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
+ .debug_line    0x00002aef      0x87a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+ .debug_line    0x00003369      0x46a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
+ .debug_line    0x000037d3      0x5ba CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
+ .debug_line    0x00003d8d      0x222 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
+ .debug_line    0x00003faf      0x776 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+ .debug_line    0x00004725     0x1259 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+ .debug_line    0x0000597e      0x74a CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+ .debug_line    0x000060c8      0x3b7 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+ .debug_line    0x0000647f       0x79 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
+ .debug_line    0x000064f8      0x32f CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
 
-.debug_str      0x00000000     0x3834
- .debug_str     0x00000000     0x3834 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
+.debug_str      0x00000000     0x38a6
+ .debug_str     0x00000000     0x38a6 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
                                 0x736 (size before relaxing)
- .debug_str     0x00003834      0x445 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
- .debug_str     0x00003834      0x2e2 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/IQ_math.c.obj
- .debug_str     0x00003834      0x247 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/PI_Cale.c.obj
- .debug_str     0x00003834      0x389 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Task_function.c.obj
- .debug_str     0x00003834      0x409 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
- .debug_str     0x00003834      0x819 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
- .debug_str     0x00003834      0xa19 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
- .debug_str     0x00003834      0x559 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
- .debug_str     0x00003834      0x9f8 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
- .debug_str     0x00003834      0xc39 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
- .debug_str     0x00003834      0x431 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
- .debug_str     0x00003834      0x78b CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
- .debug_str     0x00003834      0x430 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
- .debug_str     0x00003834      0x5a9 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
- .debug_str     0x00003834      0x353 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
- .debug_str     0x00003834      0x693 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
- .debug_str     0x00003834      0xe84 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
- .debug_str     0x00003834      0x749 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
- .debug_str     0x00003834      0x81a CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
- .debug_str     0x00003834       0xbc CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
- .debug_str     0x00003834      0x355 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
+ .debug_str     0x000038a6      0x445 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
+ .debug_str     0x000038a6      0x2e2 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/IQ_math.c.obj
+ .debug_str     0x000038a6      0x247 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/PI_Cale.c.obj
+ .debug_str     0x000038a6      0x398 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Task_function.c.obj
+ .debug_str     0x000038a6      0x409 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
+ .debug_str     0x000038a6      0x85e CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
+ .debug_str     0x000038a6      0xa19 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+ .debug_str     0x000038a6      0x559 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
+ .debug_str     0x000038a6      0x9f8 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
+ .debug_str     0x000038a6      0xc39 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+ .debug_str     0x000038a6      0x431 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
+ .debug_str     0x000038a6      0x78b CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+ .debug_str     0x000038a6      0x430 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
+ .debug_str     0x000038a6      0x5a9 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
+ .debug_str     0x000038a6      0x353 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
+ .debug_str     0x000038a6      0x693 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+ .debug_str     0x000038a6      0xe84 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+ .debug_str     0x000038a6      0x749 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+ .debug_str     0x000038a6      0x85d CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+ .debug_str     0x000038a6       0xbc CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
+ .debug_str     0x000038a6      0x355 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
 
 .comment        0x00000000       0x45
  .comment       0x00000000       0x45 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
@@ -3046,93 +3057,97 @@ LOAD C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-no
  .comment       0x00000045       0x46 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
  .comment       0x00000045       0x46 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
 
-.debug_frame    0x00000000     0x3c78
+.debug_frame    0x00000000     0x3d48
  .debug_frame   0x00000000       0xbc CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ADC_int.c.obj
  .debug_frame   0x000000bc      0x19c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/GPIO_int.c.obj
  .debug_frame   0x00000258       0xb0 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/IQ_math.c.obj
  .debug_frame   0x00000308       0x54 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/PI_Cale.c.obj
  .debug_frame   0x0000035c       0x4c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Task_function.c.obj
  .debug_frame   0x000003a8       0x4c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/ThreeHall.c.obj
- .debug_frame   0x000003f4       0x2c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
- .debug_frame   0x00000420       0xf8 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
- .debug_frame   0x00000518       0x34 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
- .debug_frame   0x0000054c       0xf4 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
- .debug_frame   0x00000640      0x160 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
- .debug_frame   0x000007a0       0xd8 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
- .debug_frame   0x00000878      0x5a4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
- .debug_frame   0x00000e1c      0x1c8 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
- .debug_frame   0x00000fe4      0x2d0 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
- .debug_frame   0x000012b4       0x2c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
- .debug_frame   0x000012e0      0x4f4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
- .debug_frame   0x000017d4      0xe2c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
- .debug_frame   0x00002600      0x490 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
- .debug_frame   0x00002a90       0x48 CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
- .debug_frame   0x00002ad8       0x98 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
- .debug_frame   0x00002b70       0x90 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_float.o)
- .debug_frame   0x00002c00       0x60 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_frame   0x00002c60      0x144 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
- .debug_frame   0x00002da4       0x34 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
- .debug_frame   0x00002dd8       0x38 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-setvbuf.o)
- .debug_frame   0x00002e10       0x88 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
- .debug_frame   0x00002e98       0x40 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
- .debug_frame   0x00002ed8       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
- .debug_frame   0x00002f04       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
- .debug_frame   0x00002f24       0x40 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-localeconv.o)
- .debug_frame   0x00002f64       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
- .debug_frame   0x00002f90       0x38 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
- .debug_frame   0x00002fc8       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
- .debug_frame   0x00002ff4       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
- .debug_frame   0x00003020       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
- .debug_frame   0x0000304c       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
- .debug_frame   0x00003078       0xb0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
- .debug_frame   0x00003128       0x28 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
- .debug_frame   0x00003150       0x70 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-dtoa.o)
- .debug_frame   0x000031c0       0x38 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
- .debug_frame   0x000031f8       0x30 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-malloc.o)
- .debug_frame   0x00003228       0x50 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
- .debug_frame   0x00003278       0x30 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
- .debug_frame   0x000032a8      0x258 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
- .debug_frame   0x00003500       0xa8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
- .debug_frame   0x000035a8       0x5c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
- .debug_frame   0x00003604       0x58 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
- .debug_frame   0x0000365c       0x48 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-locale.o)
- .debug_frame   0x000036a4       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
- .debug_frame   0x000036d0       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
- .debug_frame   0x000036fc       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
- .debug_frame   0x00003728       0x28 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
- .debug_frame   0x00003750       0x40 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-assert.o)
- .debug_frame   0x00003790       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-callocr.o)
- .debug_frame   0x000037bc       0x48 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mbtowc_r.o)
- .debug_frame   0x00003804       0x3c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wctomb_r.o)
- .debug_frame   0x00003840       0x64 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fprintf.o)
- .debug_frame   0x000038a4       0x28 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-abort.o)
- .debug_frame   0x000038cc       0xcc C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signal.o)
- .debug_frame   0x00003998       0x3c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signalr.o)
- .debug_frame   0x000039d4       0xac C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00003a80       0x50 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x00003ad0       0xc4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x00003b94       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x00003bb4       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
- .debug_frame   0x00003bd8       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(fstat.o)
- .debug_frame   0x00003bf8       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(getpid.o)
- .debug_frame   0x00003c18       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(kill.o)
- .debug_frame   0x00003c38       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(sbrk.o)
- .debug_frame   0x00003c58       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(_exit.o)
+ .debug_frame   0x000003f4       0x4c CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_ISR_MCLoop.c.obj
+ .debug_frame   0x00000440       0xf8 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim1_PWM.c.obj
+ .debug_frame   0x00000538       0x34 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Tim4_Encoder_PWMDAC.c.obj
+ .debug_frame   0x0000056c       0xf4 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/Timer.c.obj
+ .debug_frame   0x00000660      0x160 CMakeFiles/STM32_BLDC_Hall.elf.dir/User_program/printf_uart.c.obj
+ .debug_frame   0x000007c0       0xd8 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/misc.c.obj
+ .debug_frame   0x00000898      0x5a4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_adc.c.obj
+ .debug_frame   0x00000e3c      0x1c8 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_dma.c.obj
+ .debug_frame   0x00001004      0x2d0 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_gpio.c.obj
+ .debug_frame   0x000012d4       0x2c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_it.c.obj
+ .debug_frame   0x00001300      0x4f4 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_rcc.c.obj
+ .debug_frame   0x000017f4      0xe2c CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_tim.c.obj
+ .debug_frame   0x00002620      0x490 CMakeFiles/STM32_BLDC_Hall.elf.dir/FWlib/src/stm32f10x_usart.c.obj
+ .debug_frame   0x00002ab0       0x6c CMakeFiles/STM32_BLDC_Hall.elf.dir/main.c.obj
+ .debug_frame   0x00002b1c       0x98 CMakeFiles/STM32_BLDC_Hall.elf.dir/CMSIS/system_stm32f10x.c.obj
+ .debug_frame   0x00002bb4       0x90 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_float.o)
+ .debug_frame   0x00002c44       0x60 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_frame   0x00002ca4      0x144 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+ .debug_frame   0x00002de8       0x34 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
+ .debug_frame   0x00002e1c       0x6c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+ .debug_frame   0x00002e88       0x38 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-setvbuf.o)
+ .debug_frame   0x00002ec0       0x88 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+ .debug_frame   0x00002f48       0x40 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+ .debug_frame   0x00002f88       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+ .debug_frame   0x00002fb4       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
+ .debug_frame   0x00002fd4       0x40 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-localeconv.o)
+ .debug_frame   0x00003014       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
+ .debug_frame   0x00003040       0x38 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
+ .debug_frame   0x00003078       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
+ .debug_frame   0x000030a4       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
+ .debug_frame   0x000030d0       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
+ .debug_frame   0x000030fc       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
+ .debug_frame   0x00003128       0xb0 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+ .debug_frame   0x000031d8       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
+ .debug_frame   0x000031f8       0x28 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+ .debug_frame   0x00003220       0x70 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-dtoa.o)
+ .debug_frame   0x00003290       0x38 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
+ .debug_frame   0x000032c8       0x30 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-malloc.o)
+ .debug_frame   0x000032f8       0x50 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+ .debug_frame   0x00003348       0x30 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+ .debug_frame   0x00003378      0x258 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mprec.o)
+ .debug_frame   0x000035d0       0xa8 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+ .debug_frame   0x00003678       0x5c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
+ .debug_frame   0x000036d4       0x58 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+ .debug_frame   0x0000372c       0x48 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-locale.o)
+ .debug_frame   0x00003774       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+ .debug_frame   0x000037a0       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+ .debug_frame   0x000037cc       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
+ .debug_frame   0x000037f8       0x28 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_frame   0x00003820       0x40 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-assert.o)
+ .debug_frame   0x00003860       0x2c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-callocr.o)
+ .debug_frame   0x0000388c       0x48 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mbtowc_r.o)
+ .debug_frame   0x000038d4       0x3c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-wctomb_r.o)
+ .debug_frame   0x00003910       0x64 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-fprintf.o)
+ .debug_frame   0x00003974       0x28 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-abort.o)
+ .debug_frame   0x0000399c       0xcc C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signal.o)
+ .debug_frame   0x00003a68       0x3c C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-signalr.o)
+ .debug_frame   0x00003aa4       0xac C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00003b50       0x50 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00003ba0       0xc4 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00003c64       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x00003c84       0x24 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x00003ca8       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(fstat.o)
+ .debug_frame   0x00003cc8       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(getpid.o)
+ .debug_frame   0x00003ce8       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(kill.o)
+ .debug_frame   0x00003d08       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(sbrk.o)
+ .debug_frame   0x00003d28       0x20 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libnosys.a(_exit.o)
 
 .debug_line_str
-                0x00000000      0x251
+                0x00000000      0x263
  .debug_line_str
-                0x00000000      0x251 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
+                0x00000000      0x263 CMakeFiles/STM32_BLDC_Hall.elf.dir/startup/startup_stm32f103xb.s.obj
                                  0xa0 (size before relaxing)
  .debug_line_str
-                0x00000251       0xe7 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
+                0x00000263       0xe6 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcmp.o)
  .debug_line_str
-                0x00000251       0xca C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+                0x00000263       0xe7 C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
  .debug_line_str
-                0x00000251       0xca C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+                0x00000263       0xca C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
  .debug_line_str
-                0x00000251       0xca C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
+                0x00000263       0xca C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
  .debug_line_str
-                0x00000251       0xca C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
+                0x00000263       0xca C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
  .debug_line_str
-                0x00000251       0xca C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
+                0x00000263       0xca C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
+ .debug_line_str
+                0x00000263       0xca C:/PROGRA~2/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)

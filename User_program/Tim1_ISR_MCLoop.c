@@ -40,8 +40,23 @@ extern  u16 spdcmd;
 
 uint16_t  FilK1=328;
 uint16_t  FilK2=696;
+
+extern u8 switchRX;
+extern u16 rxcmd;
 // 一阶数字低通滤波器   328+696=1024  a=696/1024     (696/1024) /(2*3.14*0.02) = 54hz  cutoff freq.
 // https://wenku.baidu.com/view/2d022b6b7375a417866f8f7e.html?from=search
+
+
+const int CURRENT_DIVISOR = 20;
+const int CURRENT_OFFSET = 300;
+
+void updateCurrentReference() {
+    if (switchRX == 0) {
+        pi_ICurr.Ref = ADCSampPare.RP_speed_Voltage / CURRENT_DIVISOR + CURRENT_OFFSET;  // 0.8A+1A = 1.8A
+    } else {
+        pi_ICurr.Ref = rxcmd / CURRENT_DIVISOR + CURRENT_OFFSET;
+    }
+}
 
 void TIM1_UP_IRQHandler(void)  // 触发ADC中断采样和电机环路控制   83.333us
 {
@@ -74,14 +89,14 @@ void TIM1_UP_IRQHandler(void)  // 触发ADC中断采样和电机环路控制   83.333us
         TestPare.Speed_target = pi_spd.Ref;  //  pi_spd.Ref =  ADCSampPare.RP_speed_Voltage-300;   // 电位器转速信号
 
         //---------------速度环------------------------//    speed
-        // resistometer controller
+        // 電阻計 controller
         pi_spd.Fbk = Hall_Three.Speed_RPMF;    //  0--4000rpm
         PI_Controller((p_PI_Control)&pi_spd);  // 速度环PI控制
         pi_spd.OutF = _IQ10mpy(FilK1, pi_spd.OutF) + _IQ10mpy(FilK2, pi_spd.Out);
         //---------------------------------------------//
 
         //---------------母线电流环-----------------------------//
-        pi_ICurr.Ref = ADCSampPare.RP_speed_Voltage / 20 + 300;  // 0.8A+1A=1.8A 若放大电流 将20改小，硬件不能超过熔断丝3A
+        updateCurrentReference();
 
         pi_ICurr.Fbk = ADCSampPare.BUS_CurrF;  // 0.10A是系统抖动
 

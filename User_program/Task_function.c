@@ -17,12 +17,16 @@
 #include "PI_Cale.h"
 #include "ADC_int.h"
 #include "Tim1_PWM.h"
+
+
+
 extern ADCSamp ADCSampPare;
 extern TaskTime TaskTimePare;
 extern PI_Control pi_spd;
 extern logic logicContr;
 extern u16 spdcmd;
 extern u8 switchRX;
+extern u16 rxcmd;
 
 void InitializeParameters() {
     logicContr.drive_car = 0;
@@ -39,14 +43,17 @@ void InitializeParameters() {
 }
 
 void knob_control(void) {
+
     if (ADCSampPare.RP_speed_Voltage <= 350) {
         InitializeParameters();
     } else {
         logicContr.drive_car = 1;
         pi_spd.Ref = ADCSampPare.RP_speed_Voltage - 300;
-        if (pi_spd.Ref >= 2500)
-            pi_spd.Ref = 2500;
+        if (pi_spd.Ref >= 2500) { pi_spd.Ref = 2500;}
     }
+    if (switchRX!=0) {pi_spd.Ref= rxcmd;}
+
+
 
     if (logicContr.olddrive_car == 0 && logicContr.drive_car == 1) {
         logicContr.Start_order = 1;
