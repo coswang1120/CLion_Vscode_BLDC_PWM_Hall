@@ -57,8 +57,8 @@
 */
 
 //TODO:
-// 1. IQ 15 & IQ 10 混著用, 要能統一
-// 2. 外部輸入命令, 改變轉速獲控制 (聲音/手機/C#/C++/python)
+// 1. IQ 15 & IQ 10 混著用, 要能統一  Done
+// 2. 外部輸入命令, 改變轉速獲控制 (聲音/手機/C#/C++/python/Flask + react/php+javascript)
 // 3. 改控制器
 //
 
@@ -101,6 +101,7 @@ u16 USART_RX_STA;
 u16 spdcmd;
 extern  uint16_t  DUTY;
 u8 Res;
+u8 switchRX;
 
 char uart_rx_buffer[UART_RX_BUFFER_SIZE]; // 串口接收緩衝區
 volatile uint16_t uart_rx_write_ptr = 0; // 寫指針
@@ -112,10 +113,10 @@ void process_uart_command(void) {
     if (uart_rx_line_complete) {
         // 移除結尾的 \r\n
         uart_rx_buffer[uart_rx_write_ptr-2] = '\0';
-        
+
         // 在這裡處理接收到的命令
         printf("Received command: %s\r\n", uart_rx_buffer);
-        
+
         // 重置緩衝區
         uart_rx_write_ptr = 0;
         uart_rx_line_complete = 0;
@@ -128,9 +129,13 @@ int main(void)
     Delay(10000);
     //SysTickConfig();              // 10ms
     Timer2Config();              // 10ms
-    logicContr.Control_Mode = 1;  //   1 -> DUTY = 2*pi_spd.Ref    2 ->   close
+
+    logicContr.Control_Mode = 2;  //   1 -> DUTY = 2*pi_spd.Ref    2 ->   close
                                   //   loop    I & rotational speed
     logicContr.Run_mode = 1;      //     1 ->  CCW     2 -> CW
+    switchRX=0;                   //   轉變外部輸入   0: 電阻器  1:外部RX輸入 (0/1500/2500)
+
+
     GPIO_LED485RE_int();          // Blink LED initial
     Init_Gpio_ADC();              // ADC的引脚初始化      83us
     //InitUSART3_Gpio();            // 串口3IO初始化
@@ -156,8 +161,6 @@ int main(void)
     PI_Pare_init();  // 三个双PID参数初始化
 
 
-
-
     Uart3Init(115200); // 初始化Uart1
     PrintfInit(USART3); // printf 重定向到Uart
     
@@ -170,11 +173,8 @@ int main(void)
         //process_uart_command();  // 處理串口命令
 
         CLEAR_flag();  // 清除时间任务标志   clear flag
-                       // printf("%d \r\n",Hall_Three.Speed_RPMF);
+        // printf("%d \r\n",Hall_Three.Speed_RPMF);
     }
 }
 
-//===========================================================================
-// No more.
-//===========================================================================
 
