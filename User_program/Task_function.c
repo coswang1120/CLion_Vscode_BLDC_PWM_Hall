@@ -28,10 +28,12 @@ extern u16 spdcmd;
 extern u8 switchRX;
 extern u16 rxcmd;
 
+
 void InitializeParameters() {
     logicContr.drive_car = 0;
     logicContr.Start_order = 0;
     logicContr.Qiehuan_count = 0;
+    logicContr.olddrive_car = 0;
     pi_spd.Fbk = 0;
     pi_spd.Ref = 0;
     pi_spd.up = 0;
@@ -46,12 +48,15 @@ void knob_control(void) {
 
     if (ADCSampPare.RP_speed_Voltage <= 350) {
         InitializeParameters();
+        if (switchRX!=0 && logicContr.Control_Mode == 1) {
+            logicContr.drive_car = (rxcmd>0)? 1:0;
+        }
     } else {
         logicContr.drive_car = 1;
         pi_spd.Ref = ADCSampPare.RP_speed_Voltage - 300;
         if (pi_spd.Ref >= 2500) { pi_spd.Ref = 2500;}
     }
-    if (switchRX!=0) {pi_spd.Ref= rxcmd;}
+    if (switchRX!=0 && logicContr.Control_Mode == 1) {pi_spd.Ref= rxcmd;}
 
 
 
