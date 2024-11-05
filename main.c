@@ -171,7 +171,7 @@ int main(void)
     logicContr.Control_Mode = 1;  //   1 -> DUTY = 2*pi_spd.Ref    2 ->   close
                                   //   loop    I & rotational speed
     logicContr.Run_mode = 1;      //     1 ->  CCW     2 -> CW
-    switchRX=1;                   //   轉變外部輸入   0: 電阻器  1:外部RX輸入 (0/1500/2500)
+    switchRX=1;                   //   轉變外部輸入(只能是 1 -> DUTY = 2*pi_spd.Ref )   0: 電阻器  1:外部RX輸入 (0/1500/2500)
 
 
     GPIO_LED485RE_int();          // Blink LED initial
