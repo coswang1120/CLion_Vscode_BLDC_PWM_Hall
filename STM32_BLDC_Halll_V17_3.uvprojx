@@ -628,6 +628,11 @@
               <FileType>1</FileType>
               <FilePath>.\User_program\Timer.c</FilePath>
             </File>
+            <File>
+              <FileName>Fuzzy_Control.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\User_program\Fuzzy_Control.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

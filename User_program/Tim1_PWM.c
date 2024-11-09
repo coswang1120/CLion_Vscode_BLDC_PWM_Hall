@@ -26,8 +26,7 @@ void Tim1_PWM_Init(void) {
 
     TIM_TimeBaseStructure.TIM_Prescaler = 0;
     TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;  //  模式  增
-    TIM_TimeBaseStructure.TIM_Period =
-        5999;  //  从装比较最大 12k  =   72000/ 6000= 12k
+    TIM_TimeBaseStructure.TIM_Period =5999;  //  从装比较最大 12k  =   72000/ 6000= 12k
     TIM_TimeBaseStructure.TIM_ClockDivision = 0;  //  分频
     TIM_TimeBaseStructure.TIM_RepetitionCounter = 0;
     TIM_TimeBaseInit(TIM1, &TIM_TimeBaseStructure);

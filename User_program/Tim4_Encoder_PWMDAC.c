@@ -27,7 +27,8 @@ void TIM4PWMDAC_Config(void)
    /* TIM4 clock enable */
   RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
   /* Time base configuration */
-  TIM_TimeBaseStructure.TIM_Period = (uint16_t) (SystemCoreClock / 18000) - 1;  // 4000 
+  //TIM_TimeBaseStructure.TIM_Period = (uint16_t) (SystemCoreClock / 18000) - 1;  // 4000
+  TIM_TimeBaseStructure.TIM_Period = 5999;  // 6000
   TIM_TimeBaseStructure.TIM_Prescaler =0 ;
   TIM_TimeBaseStructure.TIM_ClockDivision = 0 ;
   TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;

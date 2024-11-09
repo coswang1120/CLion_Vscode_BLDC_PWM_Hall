@@ -26,6 +26,14 @@
 #include "printf_uart.h"
 //#include "Tim4_Encoder_PWMDAC.h"
 //#include "stdio.h"
+
+#include "Fuzzy_Control.h" 
+
+// 添加外部變量聲明
+extern Fuzzy_Control fuzzy_spd;
+extern Fuzzy_Control fuzzy_curr;
+
+
 extern   PI_Control   pi_ICurr;
 extern   PI_Control   pi_spd ;
 extern   ADCSamp    ADCSampPare;
@@ -128,6 +136,28 @@ void TIM1_UP_IRQHandler(void)  // 触发ADC中断采样和电机环路控制   83.333us
                 // pi_spd.i1 = pi_ICurr.OutF;
             }
             //----------------------------------------------------//
+        } else if (logicContr.Control_Mode ==
+                   3)  // 电流环速度环闭环，母线电流闭环做限制母线电流控制
+        {
+            fuzzy_spd.Error = pi_spd.Ref - Hall_Three.Speed_RPMF;
+            Fuzzy_Controller(&fuzzy_spd);
+
+            // 電流模糊控制
+            fuzzy_curr.Error = pi_ICurr.Ref - ADCSampPare.BUS_CurrF;
+            Fuzzy_Controller(&fuzzy_curr);
+
+            // 選擇較小的輸出作為最終控制量
+            if (fuzzy_curr.Output > fuzzy_spd.Output) {
+                DUTY = fuzzy_spd.Output;
+                //DUTY = pi_spd.OutF;  // 采用速度闭环
+                //DUTY = fuzzy_spd.Output;
+                //DUTY = fuzzy_curr.Output;
+            } else {
+                DUTY = fuzzy_curr.Output;
+                //DUTY = pi_spd.OutF;  // 采用速度闭环
+                //DUTY = fuzzy_spd.Output;
+
+            }
         }
     }
 

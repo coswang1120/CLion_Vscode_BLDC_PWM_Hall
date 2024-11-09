@@ -43,7 +43,7 @@
 //  Hall_Three.Speed_RPMF   estimated rpm from hall sensor
 //  pi_spd.Ref   rotation button  0 -4000   [target speed]
 
-//  Duty   max-> 4000
+//  Duty   TM4 max-> 6000  demo   TM1 -> 6000
 
 //  can use time.c add parameter to debug
 
@@ -87,6 +87,7 @@
 #include <string.h>
 
 #include "printf_uart.h"
+#include "Fuzzy_Control.h"
 
 u16 t;
 u16 len;
@@ -100,6 +101,9 @@ logic        logicContr=logic_DEFAULTS;
 ADCSamp      ADCSampPare=ADCSamp_DEFAULTS;
 Hall         Hall_Three=Hall_DEFAULTS ;
 
+Fuzzy_Control   fuzzy_spd = Fuzzy_Control_DEFAULTS;
+Fuzzy_Control   fuzzy_curr = Fuzzy_Control_DEFAULTS;
+
 extern u16 Tag;
 u16 USART_RX_STA;
 u16 spdcmd;
@@ -107,6 +111,8 @@ extern  uint16_t  DUTY;
 u16 rxcmd;
 u8 switchRX;
 
+
+//extern void Fuzzy_Pare_init(void);
 
 char uart_rx_buffer[UART_RX_BUFFER_SIZE]; // 串口接收緩衝區
 volatile uint16_t uart_rx_write_ptr = 0; // 寫指針
@@ -168,10 +174,10 @@ int main(void)
     //SysTickConfig();              // 10ms
     Timer2Config();              // 10ms
 
-    logicContr.Control_Mode = 1;  //   1 -> DUTY = 2*pi_spd.Ref    2 ->   close
+    logicContr.Control_Mode = 1;  //   1 -> DUTY = 2*pi_spd.Ref    2 ->   close   3-> fuzzy
                                   //   loop    I & rotational speed
-    logicContr.Run_mode = 1;      //     1 ->  CCW     2 -> CW
-    switchRX=1;                   //   轉變外部輸入(只能是 1 -> DUTY = 2*pi_spd.Ref )   0: 電阻器  1:外部RX輸入 (0/1500/2500)
+    logicContr.Run_mode = 2;      //     1 ->  CCW     2 -> CW
+    switchRX=0;                   //   轉變外部輸入(只能是 1 -> DUTY = 2*pi_spd.Ref )   0: 電阻器  1:外部RX輸入 (0/1500/2500)
 
 
     GPIO_LED485RE_int();          // Blink LED initial
@@ -197,7 +203,7 @@ int main(void)
                               // U_Curr   V_Curr  Bus_Curr
     Delay(10000);
     PI_Pare_init();  // 三个双PID参数初始化
-
+    Fuzzy_Pare_init();
 
     Uart3Init(115200); // 初始化Uart1
     PrintfInit(USART3); // printf 重定向到Uart

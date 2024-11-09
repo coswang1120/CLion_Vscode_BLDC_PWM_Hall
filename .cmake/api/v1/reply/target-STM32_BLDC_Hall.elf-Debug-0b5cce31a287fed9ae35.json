@@ -218,8 +218,9 @@
 				34,
 				35,
 				36,
-				39,
-				40
+				37,
+				40,
+				41
 			]
 		},
 		{
@@ -306,7 +307,7 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				37
+				38
 			]
 		}
 	],
@@ -426,16 +427,17 @@
 				34,
 				35,
 				36,
-				39,
-				40
+				37,
+				40,
+				41
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				37,
-				38
+				38,
+				39
 			]
 		}
 	],
@@ -445,6 +447,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "User_program/ADC_int.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "User_program/Fuzzy_Control.c",
 			"sourceGroupIndex" : 0
 		},
 		{

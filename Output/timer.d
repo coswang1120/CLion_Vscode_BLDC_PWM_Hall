@@ -40,3 +40,4 @@
 .\output\timer.o: .\User_include\printf_uart.h
 .\output\timer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\output\timer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\output\timer.o: .\User_include\Fuzzy_Control.h

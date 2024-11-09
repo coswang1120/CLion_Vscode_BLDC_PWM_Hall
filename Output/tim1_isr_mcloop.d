@@ -30,13 +30,11 @@
 .\output\tim1_isr_mcloop.o: .\FWlib\inc\stm32f10x_wwdg.h
 .\output\tim1_isr_mcloop.o: .\FWlib\inc\misc.h
 .\output\tim1_isr_mcloop.o: .\User_include\ADC_int.h
-.\output\tim1_isr_mcloop.o: .\User_include\Tim1_PWM.h
-.\output\tim1_isr_mcloop.o: .\User_include\IQ_math.h
-.\output\tim1_isr_mcloop.o: .\User_include\GPIO_int.h
 .\output\tim1_isr_mcloop.o: .\User_include\ThreeHall.h
 .\output\tim1_isr_mcloop.o: .\User_include\Task_function.h
+.\output\tim1_isr_mcloop.o: .\User_include\IQ_math.h
 .\output\tim1_isr_mcloop.o: .\User_include\PI_Cale.h
 .\output\tim1_isr_mcloop.o: .\User_include\Timer.h
 .\output\tim1_isr_mcloop.o: .\User_include\printf_uart.h
 .\output\tim1_isr_mcloop.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\output\tim1_isr_mcloop.o: .\User_include\Tim4_Encoder_PWMDAC.h
+.\output\tim1_isr_mcloop.o: .\User_include\Fuzzy_Control.h

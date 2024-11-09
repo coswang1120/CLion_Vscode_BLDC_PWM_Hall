@@ -1,7 +1,7 @@
 .\output\tim4_encoder_pwmdac.o: User_program\Tim4_Encoder_PWMDAC.c
 .\output\tim4_encoder_pwmdac.o: .\User_include\Tim4_Encoder_PWMDAC.h
-.\output\tim4_encoder_pwmdac.o: .\User_include\IQ_math.h
-.\output\tim4_encoder_pwmdac.o: .\CMSIS\stm32f10x.h
+.\output\tim4_encoder_pwmdac.o: .\FWlib\inc\stm32f10x_exti.h
+.\output\tim4_encoder_pwmdac.o: .\FWlib\inc\stm32f10x.h
 .\output\tim4_encoder_pwmdac.o: .\CMSIS\core_cm3.h
 .\output\tim4_encoder_pwmdac.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\tim4_encoder_pwmdac.o: .\CMSIS\system_stm32f10x.h

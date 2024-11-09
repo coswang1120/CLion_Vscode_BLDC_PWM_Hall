@@ -26,6 +26,7 @@
 #include "printf_uart.h"
 #include <stdio.h>
 #include <math.h>
+#include "Fuzzy_Control.h"
 
 //extern  Hall           Hall_Three;
 
@@ -33,6 +34,10 @@
 //#include "printf_uart.h"
 extern  TaskTime       TaskTimePare;
 extern PI_Control pi_spd;
+extern Hall         Hall_Three;
+extern  uint16_t  DUTY;
+extern Fuzzy_Control fuzzy_spd;
+extern Fuzzy_Control fuzzy_curr;
 
 void SysTickConfig(void) {
     /* Setup SysTick Timer for 1ms interrupts  */
@@ -52,6 +57,9 @@ void RunSystimer(void)  //  every loop clear flag but not count
         TaskTimePare.IntClock_10ms = 0;
 
         TaskTimePare.Tim10ms_flag = 1;
+        //printf("Hello\r\n");
+        //printf("Speed %d \r\n",pi_spd.Fbk);
+        //printf("Count %d \r\n",Hall_Three.Speed_countFitter);
 
         if (++TaskTimePare.Tim100ms_count >= 10)  // 100ms
         {
@@ -89,6 +97,8 @@ void RunSystimer(void)  //  every loop clear flag but not count
             TaskTimePare.Tim1s_count = 0;
             TaskTimePare.Tim1s_flag = 1;
             // printf("%d \r\n", IQSin_Cos_Table[29]);
+            printf("pi_spd.OutF %d \r\n",pi_spd.OutF);
+            printf("fuzzy_spd.Output %.2f \r\n",fuzzy_spd.Output);
         }
 
         if (++TaskTimePare.Tim10s_count >= 1000)  // 10s
@@ -96,7 +106,7 @@ void RunSystimer(void)  //  every loop clear flag but not count
             TaskTimePare.Tim10s_count = 0;
             TaskTimePare.Tim10s_flag = 1;
             //printf("Hello\r\n");
-            //printf("%d \r\n",pi_spd.Ref);
+            //
         }
 
         if (++TaskTimePare.Tim1min_count >= 6000)  // 1min

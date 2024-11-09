@@ -29,6 +29,6 @@
 .\output\threehall.o: .\FWlib\inc\stm32f10x_usart.h
 .\output\threehall.o: .\FWlib\inc\stm32f10x_wwdg.h
 .\output\threehall.o: .\FWlib\inc\misc.h
-.\output\threehall.o: .\User_include\IQ_math.h
 .\output\threehall.o: .\User_include\Tim1_PWM.h
+.\output\threehall.o: .\User_include\IQ_math.h
 .\output\threehall.o: .\User_include\Task_function.h

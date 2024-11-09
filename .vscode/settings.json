@@ -1,6 +1,7 @@
 {
   "files.autoSave": "afterDelay",
   "files.associations": {
+    "*.embeddedhtml": "html",
     "*.cpp": "cpp",
     "*.h": "cpp",
     "algorithm": "cpp",
@@ -30,7 +31,8 @@
     "led.h": "c",
     "usart.h": "c",
     "iq_math.h": "c",
-    "cstdint": "cpp"
+    "cstdint": "cpp",
+    "compare": "cpp"
   },
   "files.exclude": {
     ".git/": false
@@ -114,5 +116,6 @@
   "workbench.colorCustomizations": {
     "minimap.background": "#00000000",
     "scrollbar.shadow": "#00000000"
-  }
+  },
+  "compile-hero.disable-compile-files-on-did-save-code": true
 }
